@@ -1,0 +1,5420 @@
+{
+ "builtAt": "2026-09-23T10:56:10.063Z",
+ "songs": [
+  {
+   "id": 884025,
+   "title": "Dancing Queen",
+   "artist": "ABBA",
+   "artistIds": [
+    180
+   ],
+   "artistNames": [
+    "ABBA"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/b8b70d474b7a8f27799e0d665e9b737e/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/884025",
+   "rank": 912759
+  },
+  {
+   "id": 884030,
+   "title": "Mamma Mia",
+   "artist": "ABBA",
+   "artistIds": [
+    180
+   ],
+   "artistNames": [
+    "ABBA"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/b8b70d474b7a8f27799e0d665e9b737e/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/884030",
+   "rank": 840813
+  },
+  {
+   "id": 76376889,
+   "title": "Waterloo",
+   "artist": "ABBA",
+   "artistIds": [
+    180
+   ],
+   "artistNames": [
+    "ABBA"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2014,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/36133053035ca8f184eb469901965ac0/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/76376889",
+   "rank": 758040
+  },
+  {
+   "id": 884041,
+   "title": "Gimme! Gimme! Gimme! (A Man After Midnight)",
+   "artist": "ABBA",
+   "artistIds": [
+    180
+   ],
+   "artistNames": [
+    "ABBA"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/b8b70d474b7a8f27799e0d665e9b737e/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/884041",
+   "rank": 967569
+  },
+  {
+   "id": 884035,
+   "title": "The Winner Takes It All",
+   "artist": "ABBA",
+   "artistIds": [
+    180
+   ],
+   "artistNames": [
+    "ABBA"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/b8b70d474b7a8f27799e0d665e9b737e/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/884035",
+   "rank": 930393
+  },
+  {
+   "id": 884028,
+   "title": "Take A Chance On Me",
+   "artist": "ABBA",
+   "artistIds": [
+    180
+   ],
+   "artistNames": [
+    "ABBA"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/b8b70d474b7a8f27799e0d665e9b737e/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/884028",
+   "rank": 725594
+  },
+  {
+   "id": 884033,
+   "title": "Super Trouper",
+   "artist": "ABBA",
+   "artistIds": [
+    180
+   ],
+   "artistNames": [
+    "ABBA"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/b8b70d474b7a8f27799e0d665e9b737e/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/884033",
+   "rank": 839952
+  },
+  {
+   "id": 1073822182,
+   "title": "Knowing Me, Knowing You",
+   "artist": "ABBA",
+   "artistIds": [
+    180
+   ],
+   "artistNames": [
+    "ABBA"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2020,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/bd4b63b047e8b6b8b2d9e4e1aa025214/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1073822182",
+   "rank": 178019
+  },
+  {
+   "id": 884037,
+   "title": "SOS",
+   "artist": "ABBA",
+   "artistIds": [
+    180
+   ],
+   "artistNames": [
+    "ABBA"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/b8b70d474b7a8f27799e0d665e9b737e/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/884037",
+   "rank": 742855
+  },
+  {
+   "id": 76376876,
+   "title": "Chiquitita",
+   "artist": "ABBA",
+   "artistIds": [
+    180
+   ],
+   "artistNames": [
+    "ABBA"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2014,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/36133053035ca8f184eb469901965ac0/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/76376876",
+   "rank": 809137
+  },
+  {
+   "id": 3092167,
+   "title": "The Look",
+   "artist": "Roxette",
+   "artistIds": [
+    1755
+   ],
+   "artistNames": [
+    "Roxette"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2003,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/146abb75ffd7ad263c7356ef413a9f69/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3092167",
+   "rank": 811520
+  },
+  {
+   "id": 3098301,
+   "title": "It Must Have Been Love (From the Film \"Pretty Woman\")",
+   "artist": "Roxette",
+   "artistIds": [
+    1755
+   ],
+   "artistNames": [
+    "Roxette"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2002,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/4574dd00d3bbad3e44beb0f9fee46772/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3098301",
+   "rank": 851456
+  },
+  {
+   "id": 1663983562,
+   "title": "Listen To Your Heart",
+   "artist": "Roxette",
+   "artistIds": [
+    1755
+   ],
+   "artistNames": [
+    "Roxette"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 1988,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/e7e132a29b202daab5326d9f243ec914/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1663983562",
+   "rank": 787885
+  },
+  {
+   "id": 1523248472,
+   "title": "Joyride",
+   "artist": "Roxette",
+   "artistIds": [
+    1755
+   ],
+   "artistNames": [
+    "Roxette"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 1991,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/1375eae126a3629004398d86a7519a00/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1523248472",
+   "rank": 578015
+  },
+  {
+   "id": 89388945,
+   "title": "Dressed for Success (US Single Mix)",
+   "artist": "Roxette",
+   "artistIds": [
+    1755
+   ],
+   "artistNames": [
+    "Roxette"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2014,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/5213b1ef0649cd23cf9fddffc6360953/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/89388945",
+   "rank": 522978
+  },
+  {
+   "id": 858371,
+   "title": "The Final Countdown",
+   "artist": "Europe",
+   "artistIds": [
+    1903
+   ],
+   "artistNames": [
+    "Europe"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 1988,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/f27265df605c4bce229b0623e18f179a/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/858371",
+   "rank": 847358
+  },
+  {
+   "id": 619313,
+   "title": "Carrie",
+   "artist": "Europe",
+   "artistIds": [
+    1903
+   ],
+   "artistNames": [
+    "Europe"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2004,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/da44873bbb18e25f946863209fcbbbe0/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/619313",
+   "rank": 690586
+  },
+  {
+   "id": 94676692,
+   "title": "All That She Wants",
+   "artist": "Ace of Base",
+   "artistIds": [
+    474
+   ],
+   "artistNames": [
+    "Ace of Base"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2015,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/599c31e92ab91c01f8fb889a96e54544/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/94676692",
+   "rank": 819924
+  },
+  {
+   "id": 93851026,
+   "title": "The Sign",
+   "artist": "Ace of Base",
+   "artistIds": [
+    474
+   ],
+   "artistNames": [
+    "Ace of Base"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 1993,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/cbd01c1f0b97725e2e069f579a0020f8/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/93851026",
+   "rank": 767813
+  },
+  {
+   "id": 94676704,
+   "title": "Happy Nation",
+   "artist": "Ace of Base",
+   "artistIds": [
+    474
+   ],
+   "artistNames": [
+    "Ace of Base"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2015,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/599c31e92ab91c01f8fb889a96e54544/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/94676704",
+   "rank": 770739
+  },
+  {
+   "id": 910474,
+   "title": "Lovefool",
+   "artist": "The Cardigans",
+   "artistIds": [
+    1851
+   ],
+   "artistNames": [
+    "The Cardigans"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/c7dcdea2a0d4f52f2a9fae5610194653/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/910474",
+   "rank": 873728
+  },
+  {
+   "id": 916525,
+   "title": "My Favourite Game",
+   "artist": "The Cardigans",
+   "artistIds": [
+    1851
+   ],
+   "artistNames": [
+    "The Cardigans"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 1998,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/89086673818fad6818605028bead701e/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/916525",
+   "rank": 808033
+  },
+  {
+   "id": 128095807,
+   "title": "Dancing on My Own (Cassius Remix)",
+   "artist": "Robyn",
+   "artistIds": [
+    2648,
+    2049
+   ],
+   "artistNames": [
+    "Robyn",
+    "Cassius"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2016,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/406fecf677adab44dd71302557e20902/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/128095807",
+   "rank": 152501
+  },
+  {
+   "id": 2900091,
+   "title": "Show Me Love (Radio Version)",
+   "artist": "Robyn",
+   "artistIds": [
+    2648
+   ],
+   "artistNames": [
+    "Robyn"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 1997,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/c7da5d642f87f4be4ae3a117bf931656/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/2900091",
+   "rank": 477155
+  },
+  {
+   "id": 4673407,
+   "title": "With Every Heartbeat (Dave Spoon Remix)",
+   "artist": "Robyn",
+   "artistIds": [
+    2648
+   ],
+   "artistNames": [
+    "Robyn"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/e307cad5d4d2215988c593af2bc59eb0/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/4673407",
+   "rank": 233415
+  },
+  {
+   "id": 972520,
+   "title": "Dom andra",
+   "artist": "Kent",
+   "artistIds": [
+    2107
+   ],
+   "artistNames": [
+    "Kent"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2002,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/b7f09144c2e304b9db0562b3017df18a/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/972520",
+   "rank": 262773
+  },
+  {
+   "id": 972112,
+   "title": "Kärleken väntar",
+   "artist": "Kent",
+   "artistIds": [
+    2107
+   ],
+   "artistNames": [
+    "Kent"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2002,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/b7f09144c2e304b9db0562b3017df18a/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/972112",
+   "rank": 287838
+  },
+  {
+   "id": 2454578,
+   "title": "747 (We Ran Out Of Time)",
+   "artist": "Kent",
+   "artistIds": [
+    2107
+   ],
+   "artistNames": [
+    "Kent"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 1998,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/6ecf74293cd11f7bab8af2728a0d1a27/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/2454578",
+   "rank": 315660
+  },
+  {
+   "id": 4761434,
+   "title": "Ingenting",
+   "artist": "Kent",
+   "artistIds": [
+    2107
+   ],
+   "artistNames": [
+    "Kent"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2024,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/45f5b20a48407407d7e95d0f531128fd/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/4761434",
+   "rank": 176863
+  },
+  {
+   "id": 1023918,
+   "title": "Musik Non Stop",
+   "artist": "Kent",
+   "artistIds": [
+    2107
+   ],
+   "artistNames": [
+    "Kent"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2024,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/371682f281cb296145e501fa64e4df4d/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1023918",
+   "rank": 238221
+  },
+  {
+   "id": 3480546,
+   "title": "Känn ingen sorg för mig Göteborg",
+   "artist": "Håkan Hellström",
+   "artistIds": [
+    244061
+   ],
+   "artistNames": [
+    "Håkan Hellström"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2000,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/d60bcb1b9ca11b0d43d61b114e22e360/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3480546",
+   "rank": 210069
+  },
+  {
+   "id": 3480368,
+   "title": "Det är så jag säger det",
+   "artist": "Håkan Hellström",
+   "artistIds": [
+    244061
+   ],
+   "artistNames": [
+    "Håkan Hellström"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2002,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/5062fb1e8d73d052a9b3c1e53d904009/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3480368",
+   "rank": 154774
+  },
+  {
+   "id": 10394934,
+   "title": "Du är snart där",
+   "artist": "Håkan Hellström",
+   "artistIds": [
+    244061
+   ],
+   "artistNames": [
+    "Håkan Hellström"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2011,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/357499c32d5a7214bbe2563fd07e6e81/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/10394934",
+   "rank": 164579
+  },
+  {
+   "id": 3480362,
+   "title": "Kom igen Lena!",
+   "artist": "Håkan Hellström",
+   "artistIds": [
+    244061
+   ],
+   "artistNames": [
+    "Håkan Hellström"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2002,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/5062fb1e8d73d052a9b3c1e53d904009/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3480362",
+   "rank": 189793
+  },
+  {
+   "id": 909686712,
+   "title": "Sol, vind och vatten",
+   "artist": "Ted Gärdestad",
+   "artistIds": [
+    12885
+   ],
+   "artistNames": [
+    "Ted Gärdestad"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2020,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/ba53022841f3d4b8138fd36ef4847783/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/909686712",
+   "rank": 218507
+  },
+  {
+   "id": 909686862,
+   "title": "Jag vill ha en egen måne",
+   "artist": "Ted Gärdestad",
+   "artistIds": [
+    12885
+   ],
+   "artistNames": [
+    "Ted Gärdestad"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2020,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/b1ba0cc7d66683a1f313dd3cd62d9844/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/909686862",
+   "rank": 168809
+  },
+  {
+   "id": 3480470,
+   "title": "Sommartider",
+   "artist": "Gyllene Tider",
+   "artistIds": [
+    13048
+   ],
+   "artistNames": [
+    "Gyllene Tider"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2006,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/4888a57cd485768f88ca28f2878b3a17/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3480470",
+   "rank": 272413
+  },
+  {
+   "id": 3480315,
+   "title": "Flickorna på TV2",
+   "artist": "Gyllene Tider",
+   "artistIds": [
+    13048
+   ],
+   "artistNames": [
+    "Gyllene Tider"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2006,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/aa78d673fa73854410e16a1e8c5239df/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3480315",
+   "rank": 175883
+  },
+  {
+   "id": 3480462,
+   "title": "(Kom så ska vi) Leva livet",
+   "artist": "Gyllene Tider",
+   "artistIds": [
+    13048
+   ],
+   "artistNames": [
+    "Gyllene Tider"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2001,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/4f99c267b7657f5f1d3fbf4d43b0d431/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3480462",
+   "rank": 149241
+  },
+  {
+   "id": 3309918,
+   "title": "Här kommer alla känslorna (på en och samma gång)",
+   "artist": "Per Gessle",
+   "artistIds": [
+    16844
+   ],
+   "artistNames": [
+    "Per Gessle"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2004,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/a43865b2047b0ab91495bec93c2462fa/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3309918",
+   "rank": 196183
+  },
+  {
+   "id": 2641561732,
+   "title": "Jag och min far",
+   "artist": "Magnus Uggla",
+   "artistIds": [
+    16145
+   ],
+   "artistNames": [
+    "Magnus Uggla"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2013,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/d1308fbe49a9a6e5b3341b47f34f2afa/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/2641561732",
+   "rank": 191829
+  },
+  {
+   "id": 16177139,
+   "title": "Varning på stan",
+   "artist": "Magnus Uggla",
+   "artistIds": [
+    16145
+   ],
+   "artistNames": [
+    "Magnus Uggla"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/a71ef65a7c5e47b3f5679c015aa19f94/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/16177139",
+   "rank": 100021
+  },
+  {
+   "id": 16177261,
+   "title": "Joey Killer",
+   "artist": "Magnus Uggla",
+   "artistIds": [
+    16145
+   ],
+   "artistNames": [
+    "Magnus Uggla"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/a71ef65a7c5e47b3f5679c015aa19f94/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/16177261",
+   "rank": 67751
+  },
+  {
+   "id": 4945024,
+   "title": "Ängeln i rummet",
+   "artist": "Eva Dahlgren",
+   "artistIds": [
+    15664
+   ],
+   "artistNames": [
+    "Eva Dahlgren"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 1989,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/b1b62b383d064c6293088980b2928353/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/4945024",
+   "rank": 90788
+  },
+  {
+   "id": 4761711,
+   "title": "Vem Tänder Stjärnorna",
+   "artist": "Eva Dahlgren",
+   "artistIds": [
+    15664
+   ],
+   "artistNames": [
+    "Eva Dahlgren"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2011,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/54d7d5db74d1e57d93ccc0e45b376ad0/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/4761711",
+   "rank": 86847
+  },
+  {
+   "id": 3188176,
+   "title": "Öppna landskap",
+   "artist": "Ulf Lundell",
+   "artistIds": [
+    215229
+   ],
+   "artistNames": [
+    "Ulf Lundell"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2001,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/2b171657bbd7b944aac602e5423541e6/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3188176",
+   "rank": 113930
+  },
+  {
+   "id": 61625394,
+   "title": "Himlen runt hörnet",
+   "artist": "Lisa Nilsson",
+   "artistIds": [
+    3865
+   ],
+   "artistNames": [
+    "Lisa Nilsson"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 1992,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/914e8c37ad400e57f9cacf803884d9f6/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/61625394",
+   "rank": 138222
+  },
+  {
+   "id": 7928170,
+   "title": "Du ska va president",
+   "artist": "Imperiet",
+   "artistIds": [
+    493809
+   ],
+   "artistNames": [
+    "Imperiet"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2010,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/6ae39f3e2601594d1fca13511cf70b66/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/7928170",
+   "rank": 150540
+  },
+  {
+   "id": 15108420,
+   "title": "Undantag",
+   "artist": "Bo Kaspers Orkester",
+   "artistIds": [
+    16206
+   ],
+   "artistNames": [
+    "Bo Kaspers Orkester"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 1999,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/56732d09daca5624db5c86f947c92747/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/15108420",
+   "rank": 187529
+  },
+  {
+   "id": 93842676,
+   "title": "Sommaren är kort",
+   "artist": "Tomas Ledin",
+   "artistIds": [
+    78226
+   ],
+   "artistNames": [
+    "Tomas Ledin"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2015,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/0b2376b88bcf3ffbe5c23d22125088fd/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/93842676",
+   "rank": 194361
+  },
+  {
+   "id": 3504938081,
+   "title": "Snart tystnar musiken",
+   "artist": "Tomas Ledin",
+   "artistIds": [
+    78226
+   ],
+   "artistNames": [
+    "Tomas Ledin"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 1990,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/64699e4ee50e3efbd854c792e48561a7/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3504938081",
+   "rank": 97443
+  },
+  {
+   "id": 3614888,
+   "title": "Stockholm",
+   "artist": "Orup",
+   "artistIds": [
+    64119
+   ],
+   "artistNames": [
+    "Orup"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 1992,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/740338f8818b9f909bf559d6c44d6e31/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3614888",
+   "rank": 110499
+  },
+  {
+   "id": 697775,
+   "title": "Vill ha dig",
+   "artist": "Freestyle",
+   "artistIds": [
+    9955
+   ],
+   "artistNames": [
+    "Freestyle"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 1998,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/b23ce23191dde1d4242c5f397e69ad13/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/697775",
+   "rank": 154122
+  },
+  {
+   "id": 2178209,
+   "title": "Du lever bara en gång",
+   "artist": "Noice",
+   "artistIds": [
+    134093
+   ],
+   "artistNames": [
+    "Noice"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/46e13b75802bd31793afb0c918787e0a/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/2178209",
+   "rank": 121933
+  },
+  {
+   "id": 1855816287,
+   "title": "Stockholm i mitt hjärta",
+   "artist": "Lasse Berghagen",
+   "artistIds": [
+    278675
+   ],
+   "artistNames": [
+    "Lasse Berghagen"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2002,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/006d403fe253c04a8e94e7ae44033cff/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1855816287",
+   "rank": 116757
+  },
+  {
+   "id": 14626866,
+   "title": "Somliga går med trasiga skor",
+   "artist": "Cornelis Vreeswijk",
+   "artistIds": [
+    8386
+   ],
+   "artistNames": [
+    "Cornelis Vreeswijk"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2004,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/a3c6eb25d02ebe306f0df7b43e604a05/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/14626866",
+   "rank": 181549
+  },
+  {
+   "id": 15659840,
+   "title": "Stora havet",
+   "artist": "Jakob Hellman",
+   "artistIds": [
+    421431
+   ],
+   "artistNames": [
+    "Jakob Hellman"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 1989,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/7bffb1bf67ecd65b64a8c499f5b3eadf/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/15659840",
+   "rank": 39289
+  },
+  {
+   "id": 15650742,
+   "title": "Håll mitt hjärta (Same Old Story)",
+   "artist": "Björn Skifs",
+   "artistIds": [
+    188637
+   ],
+   "artistNames": [
+    "Björn Skifs"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2010,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/dac561f4de9f18e486422ff496458208/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/15650742",
+   "rank": 127455
+  },
+  {
+   "id": 15676453,
+   "title": "Michelangelo (Men så svara då!)",
+   "artist": "Björn Skifs",
+   "artistIds": [
+    188637
+   ],
+   "artistNames": [
+    "Björn Skifs"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2010,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/6bb9d641ddcda2ac21ba8a586907a3b4/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/15676453",
+   "rank": 158469
+  },
+  {
+   "id": 2308978,
+   "title": "Judy min vän",
+   "artist": "Tommy Körberg",
+   "artistIds": [
+    75494
+   ],
+   "artistNames": [
+    "Tommy Körberg"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2006,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/aa0d4b4deef5dc916ddda60156a1b667/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/2308978",
+   "rank": 46746
+  },
+  {
+   "id": 802879,
+   "title": "Papaya Coconut",
+   "artist": "Kikki Danielsson",
+   "artistIds": [
+    69739
+   ],
+   "artistNames": [
+    "Kikki Danielsson"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/3e3a85810c3ed0fcc9d7e3dc44521113/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/802879",
+   "rank": 114809
+  },
+  {
+   "id": 15666669,
+   "title": "Börja om från början",
+   "artist": "Sven-Ingvars",
+   "artistIds": [
+    278681
+   ],
+   "artistNames": [
+    "Sven-Ingvars"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 1994,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/cf2e206b9f139f2cf572340cb4ac4ce2/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/15666669",
+   "rank": 68679
+  },
+  {
+   "id": 113835724,
+   "title": "Fröken Fräken",
+   "artist": "Sven-Ingvars",
+   "artistIds": [
+    278681
+   ],
+   "artistNames": [
+    "Sven-Ingvars"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2015,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/945d00e40dc43ddc445a744257a787bc/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/113835724",
+   "rank": 51891
+  },
+  {
+   "id": 95585878,
+   "title": "Guld och gröna skogar",
+   "artist": "Hasse Andersson",
+   "artistIds": [
+    76605
+   ],
+   "artistNames": [
+    "Hasse Andersson"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2015,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/28a89bc83e5bcb073aace492525bd6e8/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/95585878",
+   "rank": 168179
+  },
+  {
+   "id": 695783702,
+   "title": "Gråt inga tårar",
+   "artist": "Thorleifs",
+   "artistIds": [
+    77229
+   ],
+   "artistNames": [
+    "Thorleifs"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/2965610c1bf9a32f045da94c23899922/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/695783702",
+   "rank": 66762
+  },
+  {
+   "id": 7564148,
+   "title": "De sista ljuva åren",
+   "artist": "Lasse Stefanz",
+   "artistIds": [
+    245047,
+    251477
+   ],
+   "artistNames": [
+    "Lasse Stefanz",
+    "Christina Lindberg"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2010,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/7c131051921a342c976bf6483e4553ae/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/7564148",
+   "rank": 109832
+  },
+  {
+   "id": 98754990,
+   "title": "Eloise",
+   "artist": "Arvingarna",
+   "artistIds": [
+    251482
+   ],
+   "artistNames": [
+    "Arvingarna"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 1993,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/62e88c2837c783a02df496c3da66e451/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/98754990",
+   "rank": 219220
+  },
+  {
+   "id": 580225672,
+   "title": "Fångad Av En Stormvind",
+   "artist": "Carola",
+   "artistIds": [
+    9621
+   ],
+   "artistNames": [
+    "Carola"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2011,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/37e45fdf0ee507e649d05824a2a03480/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/580225672",
+   "rank": 20907
+  },
+  {
+   "id": 13208090,
+   "title": "Främling",
+   "artist": "Carola",
+   "artistIds": [
+    9621
+   ],
+   "artistNames": [
+    "Carola"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/ef2ade7c910bb6fa72277b391d7aad06/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/13208090",
+   "rank": 203591
+  },
+  {
+   "id": 1088967,
+   "title": "Hero",
+   "artist": "Charlotte Perrelli",
+   "artistIds": [
+    75178
+   ],
+   "artistNames": [
+    "Charlotte Perrelli"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/7c9a9e6e8849016909080925261b6b6b/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1088967",
+   "rank": 250501
+  },
+  {
+   "id": 508632882,
+   "title": "Take Me to Your Heaven",
+   "artist": "Charlotte Nilsson",
+   "artistIds": [
+    251461
+   ],
+   "artistNames": [
+    "Charlotte Nilsson"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2018,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/cefef4db130ee659dadf218967116be7/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/508632882",
+   "rank": 8783
+  },
+  {
+   "id": 14488819,
+   "title": "Det gör ont",
+   "artist": "Lena Philipsson",
+   "artistIds": [
+    251423
+   ],
+   "artistNames": [
+    "Lena Philipsson"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2004,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/244df0f9d630133f0905aeede664b4db/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/14488819",
+   "rank": 139291
+  },
+  {
+   "id": 7239266,
+   "title": "Dansa i neon",
+   "artist": "Lena Philipsson",
+   "artistIds": [
+    251423
+   ],
+   "artistNames": [
+    "Lena Philipsson"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2010,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/0f98739e694d520e530a3a1554a94c1d/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/7239266",
+   "rank": 145645
+  },
+  {
+   "id": 3865616,
+   "title": "Samba Sambero",
+   "artist": "Anna Book",
+   "artistIds": [
+    251452
+   ],
+   "artistNames": [
+    "Anna Book"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2007,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/eb6104fc135a55bb4e086cdb0e7eed7c/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3865616",
+   "rank": 67003
+  },
+  {
+   "id": 70266910,
+   "title": "Avundsjuk (remix)",
+   "artist": "Nanne",
+   "artistIds": [
+    80985
+   ],
+   "artistNames": [
+    "Nanne"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2013,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/d369f9a645e2f07f6746264da89377a9/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/70266910",
+   "rank": 52631
+  },
+  {
+   "id": 990850542,
+   "title": "La Dolce Vita",
+   "artist": "After Dark",
+   "artistIds": [
+    396447
+   ],
+   "artistNames": [
+    "After Dark"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2010,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/b2896df8036d24052c2cb5abdb59d29e/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/990850542",
+   "rank": 146045
+  },
+  {
+   "id": 13693683,
+   "title": "Genom eld och vatten",
+   "artist": "Sarek",
+   "artistIds": [
+    1324365
+   ],
+   "artistNames": [
+    "Sarek"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2011,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/9574d5b9eb75fe1e1efa84f6dc720ec0/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/13693683",
+   "rank": 96818
+  },
+  {
+   "id": 14666547,
+   "title": "Jag ljuger så bra",
+   "artist": "Linda Bengtzing",
+   "artistIds": [
+    251424
+   ],
+   "artistNames": [
+    "Linda Bengtzing"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2011,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/5d702661dd293e397dd1b5eb5fbb44ef/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/14666547",
+   "rank": 190324
+  },
+  {
+   "id": 6637181,
+   "title": "Hur svårt kan det va (New)",
+   "artist": "Linda Bengtzing",
+   "artistIds": [
+    251424
+   ],
+   "artistNames": [
+    "Linda Bengtzing"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/e62b55bff3d4489fda94ef5956c8d302/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/6637181",
+   "rank": 52454
+  },
+  {
+   "id": 75372562,
+   "title": "Undo",
+   "artist": "Sanna Nielsen",
+   "artistIds": [
+    74448
+   ],
+   "artistNames": [
+    "Sanna Nielsen"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2014,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/730fb8ab2b04b29f2b79b89cd4a4ac7b/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/75372562",
+   "rank": 468082
+  },
+  {
+   "id": 67466760,
+   "title": "Euphoria",
+   "artist": "Loreen",
+   "artistIds": [
+    1199771
+   ],
+   "artistNames": [
+    "Loreen"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2013,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/cd8e405707563c544755157e0b608604/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/67466760",
+   "rank": 584910
+  },
+  {
+   "id": 2166864777,
+   "title": "Tattoo",
+   "artist": "Loreen",
+   "artistIds": [
+    1199771
+   ],
+   "artistNames": [
+    "Loreen"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2023,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/d84129b2da7661300fb9db545b0b7df6/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/2166864777",
+   "rank": 931175
+  },
+  {
+   "id": 95585876,
+   "title": "Heroes",
+   "artist": "Måns Zelmerlöw",
+   "artistIds": [
+    251454
+   ],
+   "artistNames": [
+    "Måns Zelmerlöw"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2015,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/60c211817b07d13a58a697d00e47270c/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/95585876",
+   "rank": 481133
+  },
+  {
+   "id": 3615085,
+   "title": "Cara mia",
+   "artist": "Måns Zelmerlöw",
+   "artistIds": [
+    251454
+   ],
+   "artistNames": [
+    "Måns Zelmerlöw"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2007,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/a454e7ab40738cb97362292e969bb844/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3615085",
+   "rank": 202030
+  },
+  {
+   "id": 76458291,
+   "title": "Popular",
+   "artist": "Eric Saade",
+   "artistIds": [
+    359443
+   ],
+   "artistNames": [
+    "Eric Saade"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2014,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/e72e5ee19e9091d72e4d84425b633ec5/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/76458291",
+   "rank": 267188
+  },
+  {
+   "id": 76561639,
+   "title": "Manboy",
+   "artist": "Eric Saade",
+   "artistIds": [
+    359443
+   ],
+   "artistNames": [
+    "Eric Saade"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2014,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/6b35cb09e52912d02fcbb908d6e36708/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/76561639",
+   "rank": 176446
+  },
+  {
+   "id": 26847861,
+   "title": "Amazing (Acoustic Version)",
+   "artist": "Danny Saucedo",
+   "artistIds": [
+    1197491
+   ],
+   "artistNames": [
+    "Danny Saucedo"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2012,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/8e4e874c89a9b0f59186a96e781b614c/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/26847861",
+   "rank": 31596
+  },
+  {
+   "id": 10101734,
+   "title": "In The Club (Album version)",
+   "artist": "Danny Saucedo",
+   "artistIds": [
+    1197491
+   ],
+   "artistNames": [
+    "Danny Saucedo"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2011,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/171338e5ca9a21fbb44d471863914ab1/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/10101734",
+   "rank": 26806
+  },
+  {
+   "id": 7856698,
+   "title": "Unstoppable (The Return of Natalie)",
+   "artist": "Ola",
+   "artistIds": [
+    74445
+   ],
+   "artistNames": [
+    "Ola"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2010,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/5d574758e10067a0cbca511a72275e16/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/7856698",
+   "rank": 18819
+  },
+  {
+   "id": 94957858,
+   "title": "Groupie",
+   "artist": "Samir & Viktor",
+   "artistIds": [
+    5909531
+   ],
+   "artistNames": [
+    "Samir & Viktor"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2015,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/7178bf51a7dc40fde964f4420712ddff/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/94957858",
+   "rank": 90846
+  },
+  {
+   "id": 118281958,
+   "title": "Bada nakna",
+   "artist": "Samir & Viktor",
+   "artistIds": [
+    5909531
+   ],
+   "artistNames": [
+    "Samir & Viktor"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2016,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/69040862d9ec87adaf599d1c5c8f2d1f/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/118281958",
+   "rank": 196409
+  },
+  {
+   "id": 74969126,
+   "title": "Busy Doin' Nothin'",
+   "artist": "Ace Wilder",
+   "artistIds": [
+    2649311
+   ],
+   "artistNames": [
+    "Ace Wilder"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2014,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/e70680798f1958854403a770524f5092/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/74969126",
+   "rank": 170857
+  },
+  {
+   "id": 120037738,
+   "title": "If I Were Sorry",
+   "artist": "Frans",
+   "artistIds": [
+    110636
+   ],
+   "artistNames": [
+    "Frans"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2016,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/d9af37d6b8e56939b5d0c23258f9c2e2/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/120037738",
+   "rank": 444625
+  },
+  {
+   "id": 142931392,
+   "title": "I Can´t Go On",
+   "artist": "Robin Bengtsson",
+   "artistIds": [
+    157872
+   ],
+   "artistNames": [
+    "Robin Bengtsson"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2017,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/a632291422a3880daf07da0a10a614c7/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/142931392",
+   "rank": 232571
+  },
+  {
+   "id": 676125412,
+   "title": "Too Late For Love",
+   "artist": "John Lundvik",
+   "artistIds": [
+    4456013
+   ],
+   "artistNames": [
+    "John Lundvik"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/8f648dc0eb34ee7fde0306a99a043353/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/676125412",
+   "rank": 313024
+  },
+  {
+   "id": 142915718,
+   "title": "As I Lay Me Down",
+   "artist": "Wiktoria",
+   "artistIds": [
+    6096972
+   ],
+   "artistNames": [
+    "Wiktoria"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2017,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/288d13db64d37838522026f11b2bce13/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/142915718",
+   "rank": 71689
+  },
+  {
+   "id": 871921772,
+   "title": "Bulletproof",
+   "artist": "Dotter",
+   "artistIds": [
+    5329036
+   ],
+   "artistNames": [
+    "Dotter"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2020,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/c5b73e060ad14d61cc98548235dd0f99/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/871921772",
+   "rank": 213771
+  },
+  {
+   "id": 142915708,
+   "title": "A Million Years",
+   "artist": "Mariette",
+   "artistIds": [
+    5620510
+   ],
+   "artistNames": [
+    "Mariette"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2017,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/636b17f0d5c779d65f3f73904b8d01b5/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/142915708",
+   "rank": 197012
+  },
+  {
+   "id": 886168152,
+   "title": "Move",
+   "artist": "The Mamas",
+   "artistIds": [
+    2766021
+   ],
+   "artistNames": [
+    "The Mamas"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2020,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/a6e605fc7ace70f3e72db8b77cc26e6d/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/886168152",
+   "rank": 251618
+  },
+  {
+   "id": 1259074852,
+   "title": "Voices",
+   "artist": "Tusse",
+   "artistIds": [
+    14966067
+   ],
+   "artistNames": [
+    "Tusse"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2021,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/11db5696a3e0e89048240edd3f33d51d/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1259074852",
+   "rank": 386889
+  },
+  {
+   "id": 1635675002,
+   "title": "Hold Me Closer",
+   "artist": "Cornelia Jakobs",
+   "artistIds": [
+    9940804
+   ],
+   "artistNames": [
+    "Cornelia Jakobs"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2022,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/4ec7a1a3499e5a397ed614e574326a4c/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1635675002",
+   "rank": 411494
+  },
+  {
+   "id": 2684919352,
+   "title": "Unforgettable",
+   "artist": "Marcus & Martinus",
+   "artistIds": [
+    3697701
+   ],
+   "artistNames": [
+    "Marcus & Martinus"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2024,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/582508df99856f596dadaf8ac577adc4/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/2684919352",
+   "rank": 477241
+  },
+  {
+   "id": 7407935,
+   "title": "Crazy in Love",
+   "artist": "Jill Johnson",
+   "artistIds": [
+    74323
+   ],
+   "artistNames": [
+    "Jill Johnson"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2010,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/bceff25add7babbbc9a584e949806a0a/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/7407935",
+   "rank": 31782
+  },
+  {
+   "id": 106883562,
+   "title": "Crying at the Discoteque (Radio Edit)",
+   "artist": "Alcazar",
+   "artistIds": [
+    117685822
+   ],
+   "artistNames": [
+    "Alcazar"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2015,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/9804f0692de24b085a848e5eb901f3ab/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/106883562",
+   "rank": 569852
+  },
+  {
+   "id": 14383880,
+   "title": "Levels (Radio Edit)",
+   "artist": "Avicii",
+   "artistIds": [
+    293585
+   ],
+   "artistNames": [
+    "Avicii"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2011,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/30bc3d8c348ddddb00c44f28d3120ac5/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/14383880",
+   "rank": 898187
+  },
+  {
+   "id": 70266756,
+   "title": "Wake Me Up",
+   "artist": "Avicii",
+   "artistIds": [
+    293585
+   ],
+   "artistNames": [
+    "Avicii"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2013,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/ec97306735b46ec334e0ce562290775b/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/70266756",
+   "rank": 921155
+  },
+  {
+   "id": 70266758,
+   "title": "Hey Brother",
+   "artist": "Avicii",
+   "artistIds": [
+    293585
+   ],
+   "artistNames": [
+    "Avicii"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2013,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/ec97306735b46ec334e0ce562290775b/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/70266758",
+   "rank": 878621
+  },
+  {
+   "id": 90632837,
+   "title": "The Nights",
+   "artist": "Avicii",
+   "artistIds": [
+    293585
+   ],
+   "artistNames": [
+    "Avicii"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2014,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/6e58a99f59a150e9b4aefbeb2d6fc856/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/90632837",
+   "rank": 886120
+  },
+  {
+   "id": 107346368,
+   "title": "Waiting For Love",
+   "artist": "Avicii",
+   "artistIds": [
+    293585
+   ],
+   "artistNames": [
+    "Avicii"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2015,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/6fe420c62b5696019b9359b689785086/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/107346368",
+   "rank": 885267
+  },
+  {
+   "id": 60842359,
+   "title": "Don't You Worry Child (Radio Edit)",
+   "artist": "Swedish House Mafia",
+   "artistIds": [
+    407188,
+    126010
+   ],
+   "artistNames": [
+    "Swedish House Mafia",
+    "John Martin"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2012,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/a6e59fada64940a751de6eaa01229e8b/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/60842359",
+   "rank": 865370
+  },
+  {
+   "id": 11234004,
+   "title": "Save The World",
+   "artist": "Swedish House Mafia",
+   "artistIds": [
+    407188
+   ],
+   "artistNames": [
+    "Swedish House Mafia"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2011,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/2dffc54e9c1765a556deb5485c885d74/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/11234004",
+   "rank": 731444
+  },
+  {
+   "id": 362795841,
+   "title": "More Than You Know",
+   "artist": "Axwell /\\ Ingrosso",
+   "artistIds": [
+    7099473,
+    3847,
+    175997
+   ],
+   "artistNames": [
+    "Axwell /\\ Ingrosso",
+    "Axwell",
+    "Sebastian Ingrosso"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2017,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/f85129789df4495478e970a47b8f957f/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/362795841",
+   "rank": 806548
+  },
+  {
+   "id": 437979092,
+   "title": "Sun Is Shining",
+   "artist": "Axwell /\\ Ingrosso",
+   "artistIds": [
+    7099473,
+    3847,
+    175997
+   ],
+   "artistNames": [
+    "Axwell /\\ Ingrosso",
+    "Axwell",
+    "Sebastian Ingrosso"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2017,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/0cd51b420e95f4d0410a03bbf7053119/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/437979092",
+   "rank": 653036
+  },
+  {
+   "id": 86453925,
+   "title": "Runaway (U & I)",
+   "artist": "Galantis",
+   "artistIds": [
+    3265001
+   ],
+   "artistNames": [
+    "Galantis"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2014,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/e26d05cc4a80b07bcb4182bb598eae9d/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/86453925",
+   "rank": 813530
+  },
+  {
+   "id": 144389048,
+   "title": "Lush Life",
+   "artist": "Zara Larsson",
+   "artistIds": [
+    4331004
+   ],
+   "artistNames": [
+    "Zara Larsson"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2017,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/68ef927599933cc3f45fcf8af23c5ac5/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/144389048",
+   "rank": 987028
+  },
+  {
+   "id": 144389058,
+   "title": "Never Forget You",
+   "artist": "Zara Larsson",
+   "artistIds": [
+    4331004,
+    412348301
+   ],
+   "artistNames": [
+    "Zara Larsson",
+    "MNEK"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2017,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/68ef927599933cc3f45fcf8af23c5ac5/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/144389058",
+   "rank": 791640
+  },
+  {
+   "id": 144389066,
+   "title": "Ain't My Fault",
+   "artist": "Zara Larsson",
+   "artistIds": [
+    4331004
+   ],
+   "artistNames": [
+    "Zara Larsson"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2017,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/68ef927599933cc3f45fcf8af23c5ac5/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/144389066",
+   "rank": 759091
+  },
+  {
+   "id": 84669141,
+   "title": "Habits (Stay High)",
+   "artist": "Tove Lo",
+   "artistIds": [
+    4103977
+   ],
+   "artistNames": [
+    "Tove Lo"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2014,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/bca07a0bfaaf112657e078b3cbc48d82/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/84669141",
+   "rank": 899535
+  },
+  {
+   "id": 84669123,
+   "title": "Talking Body",
+   "artist": "Tove Lo",
+   "artistIds": [
+    4103977
+   ],
+   "artistNames": [
+    "Tove Lo"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2014,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/bca07a0bfaaf112657e078b3cbc48d82/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/84669123",
+   "rank": 936050
+  },
+  {
+   "id": 1131737862,
+   "title": "I Love It (feat. Charli XCX) (Tiesto Remix)",
+   "artist": "Icona Pop",
+   "artistIds": [
+    961592,
+    256720322,
+    434
+   ],
+   "artistNames": [
+    "Icona Pop",
+    "Charli Xcx",
+    "Tiësto"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2013,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/05502c7f143d5103a36b6285f797f76f/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1131737862",
+   "rank": 266769
+  },
+  {
+   "id": 1417422142,
+   "title": "I Follow Rivers (The Lost Sessions)",
+   "artist": "Lykke Li",
+   "artistIds": [
+    72503
+   ],
+   "artistNames": [
+    "Lykke Li"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2021,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/8fc6a1329475440ed1fcdeea37a600ca/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1417422142",
+   "rank": 246647
+  },
+  {
+   "id": 57836541,
+   "title": "Emmylou",
+   "artist": "First Aid Kit",
+   "artistIds": [
+    167324
+   ],
+   "artistNames": [
+    "First Aid Kit"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2012,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/ca9a31244959da61047dfb7f43f4a59d/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/57836541",
+   "rank": 497791
+  },
+  {
+   "id": 2477797921,
+   "title": "Heartbeats (Rocketboy Vocodered Remix)",
+   "artist": "José González",
+   "artistIds": [
+    1169,
+    13966251
+   ],
+   "artistNames": [
+    "José González",
+    "Rocketboy"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2011,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/e46ccea890c8bc70894b2766d6c6d994/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/2477797921",
+   "rank": 118606
+  },
+  {
+   "id": 378310131,
+   "title": "Hate To Say I Told You So",
+   "artist": "The Hives",
+   "artistIds": [
+    621
+   ],
+   "artistNames": [
+    "The Hives"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2002,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/838dce13ade3ecc460e839be114bf096/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/378310131",
+   "rank": 723469
+  },
+  {
+   "id": 2271172807,
+   "title": "Dance with Somebody (Radio Version)",
+   "artist": "Mando Diao",
+   "artistIds": [
+    2496
+   ],
+   "artistNames": [
+    "Mando Diao"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2009,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/1cad1e0f6d018a2c14958d9f77822175/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/2271172807",
+   "rank": 632147
+  },
+  {
+   "id": 4194903,
+   "title": "Young Folks",
+   "artist": "Peter Bjorn and John",
+   "artistIds": [
+    8387
+   ],
+   "artistNames": [
+    "Peter Bjorn and John"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2009,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/0e8384d91e7571a71ef580a2a293b13f/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/4194903",
+   "rank": 801953
+  },
+  {
+   "id": 3250209041,
+   "title": "Animal",
+   "artist": "Miike Snow",
+   "artistIds": [
+    247339
+   ],
+   "artistNames": [
+    "Miike Snow"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2009,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/ac82658d02758fbd9226da8a2462b9f1/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3250209041",
+   "rank": 556631
+  },
+  {
+   "id": 3157501,
+   "title": "Jerk It Out",
+   "artist": "Caesars",
+   "artistIds": [
+    619
+   ],
+   "artistNames": [
+    "Caesars"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2005,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/92df8700da5da5d6e65df57d0e1eb41b/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3157501",
+   "rank": 754873
+  },
+  {
+   "id": 765810,
+   "title": "Living in America",
+   "artist": "The Sounds",
+   "artistIds": [
+    2795
+   ],
+   "artistNames": [
+    "The Sounds"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2002,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/f074385ea9a095378240df44befa020b/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/765810",
+   "rank": 262401
+  },
+  {
+   "id": 16032013,
+   "title": "Some Die Young",
+   "artist": "Laleh",
+   "artistIds": [
+    16638
+   ],
+   "artistNames": [
+    "Laleh"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2012,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/5b7da93fa549a241382ca3ae8b871ccb/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/16032013",
+   "rank": 138565
+  },
+  {
+   "id": 78525535,
+   "title": "Goliat",
+   "artist": "Laleh",
+   "artistIds": [
+    16638
+   ],
+   "artistNames": [
+    "Laleh"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2014,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/433786fccb34ae1a5ca5b172d0777360/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/78525535",
+   "rank": 158354
+  },
+  {
+   "id": 44112901,
+   "title": "Jag kommer",
+   "artist": "Veronica Maggio",
+   "artistIds": [
+    74439
+   ],
+   "artistNames": [
+    "Veronica Maggio"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2011,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/06333028fa315552903b68adfffcc0b3/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/44112901",
+   "rank": 335356
+  },
+  {
+   "id": 44112891,
+   "title": "Välkommen in",
+   "artist": "Veronica Maggio",
+   "artistIds": [
+    74439
+   ],
+   "artistNames": [
+    "Veronica Maggio"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2011,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/06333028fa315552903b68adfffcc0b3/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/44112891",
+   "rank": 279755
+  },
+  {
+   "id": 4190538,
+   "title": "Måndagsbarn (itech remix)",
+   "artist": "Veronica Maggio",
+   "artistIds": [
+    74439,
+    10301660,
+    10301658
+   ],
+   "artistNames": [
+    "Veronica Maggio",
+    "Johan Grönlund",
+    "Patrik Simolin"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2009,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/24d7ff6c8c9ff5c341979ffbc5722b01/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/4190538",
+   "rank": 103061
+  },
+  {
+   "id": 70575805,
+   "title": "Sergels torg",
+   "artist": "Veronica Maggio",
+   "artistIds": [
+    74439
+   ],
+   "artistNames": [
+    "Veronica Maggio"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2013,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/58296a5c8b9019c50a0648c62df73193/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/70575805",
+   "rank": 176647
+  },
+  {
+   "id": 44112881,
+   "title": "Satan i gatan",
+   "artist": "Veronica Maggio",
+   "artistIds": [
+    74439
+   ],
+   "artistNames": [
+    "Veronica Maggio"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2011,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/06333028fa315552903b68adfffcc0b3/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/44112881",
+   "rank": 219682
+  },
+  {
+   "id": 1184123,
+   "title": "Dumpa mig (Radio Version)",
+   "artist": "Veronica Maggio",
+   "artistIds": [
+    74439
+   ],
+   "artistNames": [
+    "Veronica Maggio"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2006,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/b4fb3d42ac7f98aa515f736d48c91f40/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1184123",
+   "rank": 77450
+  },
+  {
+   "id": 1465996462,
+   "title": "Hela huset",
+   "artist": "Veronica Maggio",
+   "artistIds": [
+    74439,
+    244061
+   ],
+   "artistNames": [
+    "Veronica Maggio",
+    "Håkan Hellström"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2013,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/1afea7a8e6075036288a58605adc5474/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1465996462",
+   "rank": 188283
+  },
+  {
+   "id": 101740639,
+   "title": "Freak",
+   "artist": "Molly Sandén",
+   "artistIds": [
+    266270
+   ],
+   "artistNames": [
+    "Molly Sandén"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2015,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/a4f65dc23c4f0fbdf28cab8c94990e3e/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/101740639",
+   "rank": 174495
+  },
+  {
+   "id": 2352253365,
+   "title": "Ta mig tillbaka",
+   "artist": "Darin",
+   "artistIds": [
+    13086
+   ],
+   "artistNames": [
+    "Darin"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2023,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/52079446ba66d5878d0c1253dfbb90e1/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/2352253365",
+   "rank": 228137
+  },
+  {
+   "id": 62944442,
+   "title": "Astrologen",
+   "artist": "Darin",
+   "artistIds": [
+    13086
+   ],
+   "artistNames": [
+    "Darin"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2013,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/cef53fbb8acd983d839d049f483f5ae7/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/62944442",
+   "rank": 149684
+  },
+  {
+   "id": 573858,
+   "title": "Be what you wanna be",
+   "artist": "Darin",
+   "artistIds": [
+    13086
+   ],
+   "artistNames": [
+    "Darin"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2005,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/7d2daf9987f94725318f655071f49bb9/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/573858",
+   "rank": 124562
+  },
+  {
+   "id": 6716026,
+   "title": "Från och med Du",
+   "artist": "Oskar Linnros",
+   "artistIds": [
+    343414
+   ],
+   "artistNames": [
+    "Oskar Linnros"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2010,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/d58435231429ea81f1c4566e1175fd90/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/6716026",
+   "rank": 256350
+  },
+  {
+   "id": 3912683371,
+   "title": "Slå mig hårt i ansiktet",
+   "artist": "Thomas Stenström",
+   "artistIds": [
+    989434
+   ],
+   "artistNames": [
+    "Thomas Stenström"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2014,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/1c71c117e7185086f0f92d8badcb09eb/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3912683371",
+   "rank": 204132
+  },
+  {
+   "id": 849773142,
+   "title": "Svag",
+   "artist": "Victor Leksell",
+   "artistIds": [
+    14891881
+   ],
+   "artistNames": [
+    "Victor Leksell"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2020,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/41fc614bd1216801b2d855f1d6367932/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/849773142",
+   "rank": 420217
+  },
+  {
+   "id": 826839612,
+   "title": "Dancing the Whole Way Home",
+   "artist": "Miss Li",
+   "artistIds": [
+    181909
+   ],
+   "artistNames": [
+    "Miss Li"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2009,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/d64a6e63380218fd3274f41edb5ed526/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/826839612",
+   "rank": 120224
+  },
+  {
+   "id": 75876890,
+   "title": "Younger (Kygo Remix)",
+   "artist": "Seinabo Sey",
+   "artistIds": [
+    4336474,
+    4768753
+   ],
+   "artistNames": [
+    "Seinabo Sey",
+    "Kygo"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2014,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/4d1c2a1a9b02e6146fbad50af200fae0/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/75876890",
+   "rank": 562498
+  },
+  {
+   "id": 82409176,
+   "title": "Scarred for Life (Sakarias86/Dante Remix)",
+   "artist": "Sabina Ddumba",
+   "artistIds": [
+    5371880
+   ],
+   "artistNames": [
+    "Sabina Ddumba"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2014,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/c14e985b97da3268476c06c886ff7129/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/82409176",
+   "rank": 160684
+  },
+  {
+   "id": 77043449,
+   "title": "Don't Wait",
+   "artist": "Mapei",
+   "artistIds": [
+    4979041
+   ],
+   "artistNames": [
+    "Mapei"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2014,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/48c8dbe79ddfdfbb2f7317ded5703446/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/77043449",
+   "rank": 593927
+  },
+  {
+   "id": 60200351,
+   "title": "Händerna mot himlen",
+   "artist": "Petra Marklund",
+   "artistIds": [
+    1426317
+   ],
+   "artistNames": [
+    "Petra Marklund"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2012,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/311d7bdccc90e25488b220ebd709c7f9/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/60200351",
+   "rank": 347816
+  },
+  {
+   "id": 15543742,
+   "title": "Cry for You",
+   "artist": "September",
+   "artistIds": [
+    7793
+   ],
+   "artistNames": [
+    "September"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2007,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/5c7d954400e81607aa5a75bca87bc2b1/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/15543742",
+   "rank": 737304
+  },
+  {
+   "id": 12565819,
+   "title": "Om sanningen ska fram (Vill du ligga med mig?) (Clubedit Radio)",
+   "artist": "Eric Amarillo",
+   "artistIds": [
+    1362943
+   ],
+   "artistNames": [
+    "Eric Amarillo"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2011,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/dbad870c443ec66ba2b6e313a8cddf28/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/12565819",
+   "rank": 154460
+  },
+  {
+   "id": 5400413,
+   "title": "Keep On Walking",
+   "artist": "Salem Al Fakir",
+   "artistIds": [
+    339222
+   ],
+   "artistNames": [
+    "Salem Al Fakir"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2010,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/f96465247b791e5fd380a7646544d23f/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/5400413",
+   "rank": 125346
+  },
+  {
+   "id": 76561588,
+   "title": "Release Me",
+   "artist": "Agnes",
+   "artistIds": [
+    70667
+   ],
+   "artistNames": [
+    "Agnes"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/73fe203fdca0cae069dea9fbb89a0d17/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/76561588",
+   "rank": 659848
+  },
+  {
+   "id": 746411,
+   "title": "Boten Anna (Radio edit)",
+   "artist": "Basshunter",
+   "artistIds": [
+    5652
+   ],
+   "artistNames": [
+    "Basshunter"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/8a3901e8d7d066285e1ec53010e51ede/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/746411",
+   "rank": 185315
+  },
+  {
+   "id": 746387,
+   "title": "Now You're Gone (feat. DJ Mental Theos Bazzheadz) (Radio Edit)",
+   "artist": "Basshunter",
+   "artistIds": [
+    5652,
+    5075435
+   ],
+   "artistNames": [
+    "Basshunter",
+    "DJ Mental Theos Bazzheadz"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/8a3901e8d7d066285e1ec53010e51ede/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/746387",
+   "rank": 722895
+  },
+  {
+   "id": 808266,
+   "title": "DotA (Radio Edit)",
+   "artist": "Basshunter",
+   "artistIds": [
+    5652
+   ],
+   "artistNames": [
+    "Basshunter"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/fb23d67a70376ae32005a859dcf78a3d/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/808266",
+   "rank": 332405
+  },
+  {
+   "id": 927967,
+   "title": "Set The World On Fire (7\" Version)",
+   "artist": "E-Type",
+   "artistIds": [
+    3197
+   ],
+   "artistNames": [
+    "E-Type"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/0870f219ee2ec3d735047bd4112c9755/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/927967",
+   "rank": 391700
+  },
+  {
+   "id": 419139102,
+   "title": "Cotton Eye Joe",
+   "artist": "Rednex",
+   "artistIds": [
+    933
+   ],
+   "artistNames": [
+    "Rednex"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 1994,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/090f699ce4d73c3a091c46df49d4a833/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/419139102",
+   "rank": 791898
+  },
+  {
+   "id": 3801448032,
+   "title": "It's My Life (Radio Edit)",
+   "artist": "Dr. Alban",
+   "artistIds": [
+    999
+   ],
+   "artistNames": [
+    "Dr. Alban"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2026,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/fb14c5fc2f70dd658f5035aeaaa6f39a/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3801448032",
+   "rank": 686693
+  },
+  {
+   "id": 979444,
+   "title": "Crucified (Radio Edit)",
+   "artist": "Army of Lovers",
+   "artistIds": [
+    7315
+   ],
+   "artistNames": [
+    "Army of Lovers"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/ef60149d17d6e3c9c84b20194f7c7016/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/979444",
+   "rank": 615414
+  },
+  {
+   "id": 3324536,
+   "title": "Buffalo Stance",
+   "artist": "Neneh Cherry",
+   "artistIds": [
+    2680
+   ],
+   "artistNames": [
+    "Neneh Cherry"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 1992,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/bdeb514b534c737aba92a28e0264a8c5/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3324536",
+   "rank": 635802
+  },
+  {
+   "id": 1865518437,
+   "title": "Save Tonight (2018 Rendition)",
+   "artist": "Eagle-Eye Cherry",
+   "artistIds": [
+    1193
+   ],
+   "artistNames": [
+    "Eagle-Eye Cherry"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2018,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/458a569bdba61b99628f9f48c93fde3b/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1865518437",
+   "rank": 388008
+  },
+  {
+   "id": 862596392,
+   "title": "Big Big World",
+   "artist": "Emilia",
+   "artistIds": [
+    6311
+   ],
+   "artistNames": [
+    "Emilia"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2020,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/eb405c4bb1423857c79f98bade3dfb47/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/862596392",
+   "rank": 633176
+  },
+  {
+   "id": 533795,
+   "title": "All 'Bout the Money",
+   "artist": "Meja",
+   "artistIds": [
+    6991
+   ],
+   "artistNames": [
+    "Meja"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 1997,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/24d53713fbce0d8c164120e0fe673530/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/533795",
+   "rank": 573657
+  },
+  {
+   "id": 2290028,
+   "title": "Upside Down",
+   "artist": "A*Teens",
+   "artistIds": [
+    8704
+   ],
+   "artistNames": [
+    "A*Teens"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2004,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/72695cc7edd0745c0565629c67f9182e/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/2290028",
+   "rank": 370569
+  },
+  {
+   "id": 679553202,
+   "title": "Primo Victoria",
+   "artist": "Sabaton",
+   "artistIds": [
+    12022
+   ],
+   "artistNames": [
+    "Sabaton"
+   ],
+   "cats": [
+    "alla"
+   ],
+   "year": 2010,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/c3144cc1a71c8783204731631c2fb078/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/679553202",
+   "rank": 587652
+  },
+  {
+   "id": 95966894,
+   "title": "Äppelknyckarjazz",
+   "artist": "Movits!",
+   "artistIds": [
+    281883
+   ],
+   "artistNames": [
+    "Movits!"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2010,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/1d8c21cbcce1710f37f5430abe97f2f5/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/95966894",
+   "rank": 219278
+  },
+  {
+   "id": 126772851,
+   "title": "Så klart! (feat. Eye N'I)",
+   "artist": "Petter",
+   "artistIds": [
+    14619,
+    1529318
+   ],
+   "artistNames": [
+    "Petter",
+    "Eye N'I"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2000,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/95f7c2b36444aba002474b43cdad6f8f/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/126772851",
+   "rank": 17735
+  },
+  {
+   "id": 1023681,
+   "title": "Mikrofonkåt",
+   "artist": "Petter",
+   "artistIds": [
+    14619
+   ],
+   "artistNames": [
+    "Petter"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 1998,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/bf407494ece6fe7d0f281bd2d988b383/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1023681",
+   "rank": 65904
+  },
+  {
+   "id": 1021101,
+   "title": "Minnen",
+   "artist": "Petter",
+   "artistIds": [
+    14619
+   ],
+   "artistNames": [
+    "Petter"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 1998,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/bf407494ece6fe7d0f281bd2d988b383/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1021101",
+   "rank": 21449
+  },
+  {
+   "id": 12566258,
+   "title": "Resten av ditt liv",
+   "artist": "Timbuktu",
+   "artistIds": [
+    6659
+   ],
+   "artistNames": [
+    "Timbuktu"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2011,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/731a21d4abce407bf0a7078af00658e6/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/12566258",
+   "rank": 112308
+  },
+  {
+   "id": 583357102,
+   "title": "Det Löser Sig",
+   "artist": "Timbuktu",
+   "artistIds": [
+    6659,
+    180938
+   ],
+   "artistNames": [
+    "Timbuktu",
+    "Damn!"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2018,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/4786405641911bf5cdc7c895545bd374/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/583357102",
+   "rank": 21810
+  },
+  {
+   "id": 10245756,
+   "title": "KarmaKontot",
+   "artist": "Timbuktu",
+   "artistIds": [
+    6659
+   ],
+   "artistNames": [
+    "Timbuktu"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2007,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/1f43d5f91d994714875ab15434ddfce9/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/10245756",
+   "rank": 126698
+  },
+  {
+   "id": 10245741,
+   "title": "Alla vill till himmelen men ingen vill dö",
+   "artist": "Timbuktu",
+   "artistIds": [
+    6659
+   ],
+   "artistNames": [
+    "Timbuktu"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2005,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/b7a8a43f76c2e39dd5c6379f6eb72527/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/10245741",
+   "rank": 227150
+  },
+  {
+   "id": 762676,
+   "title": "Välkommen till förorten",
+   "artist": "The Latin Kings",
+   "artistIds": [
+    67179
+   ],
+   "artistNames": [
+    "The Latin Kings"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 1994,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/4b2d12374a7172dd5687e1d7a0c89b07/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/762676",
+   "rank": 40713
+  },
+  {
+   "id": 411205122,
+   "title": "Mamma",
+   "artist": "Ken Ring",
+   "artistIds": [
+    288264,
+    64853
+   ],
+   "artistNames": [
+    "Ken Ring",
+    "Uno Svenningsson"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 1999,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/99cdf4dcb8c7b8e7465ce750bb53c115/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/411205122",
+   "rank": 37032
+  },
+  {
+   "id": 82423554,
+   "title": "My Cool",
+   "artist": "Adam Tensta",
+   "artistIds": [
+    864207
+   ],
+   "artistNames": [
+    "Adam Tensta"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2014,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/068af25e56911034bea7da1032a89f58/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/82423554",
+   "rank": 105612
+  },
+  {
+   "id": 1925559947,
+   "title": "163 För Evigt",
+   "artist": "Cherrie",
+   "artistIds": [
+    8225742,
+    10470285
+   ],
+   "artistNames": [
+    "Cherrie",
+    "Z.E"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2017,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/4618ea1c0ad7b3532c3178b8fc463ff3/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1925559947",
+   "rank": 95084
+  },
+  {
+   "id": 691243682,
+   "title": "Katten i trakten",
+   "artist": "Einár",
+   "artistIds": [
+    5339843
+   ],
+   "artistNames": [
+    "Einár"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/0b2a88cb70deb1d57899b24b4749b70d/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/691243682",
+   "rank": 194946
+  },
+  {
+   "id": 551175602,
+   "title": "Pari",
+   "artist": "Hov1",
+   "artistIds": [
+    9060182,
+    9245294
+   ],
+   "artistNames": [
+    "Hov1",
+    "Jireel"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2018,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/552db588ecc228da0b6ad47dd33ef8a0/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/551175602",
+   "rank": 160863
+  },
+  {
+   "id": 1503453752,
+   "title": "Barn av vår tid",
+   "artist": "Hov1",
+   "artistIds": [
+    9060182
+   ],
+   "artistNames": [
+    "Hov1"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2021,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/be3e66640c8514b1f998b0cfc68e19cc/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1503453752",
+   "rank": 146325
+  },
+  {
+   "id": 1692471257,
+   "title": "Ginseng Strip 2002",
+   "artist": "Yung Lean",
+   "artistIds": [
+    5097674
+   ],
+   "artistNames": [
+    "Yung Lean"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2013,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/948f8599247917443c3a829a04ff1a6d/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1692471257",
+   "rank": 703491
+  },
+  {
+   "id": 1692470717,
+   "title": "Kyoto",
+   "artist": "Yung Lean",
+   "artistIds": [
+    5097674
+   ],
+   "artistNames": [
+    "Yung Lean"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2013,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/3016d602737f8d666080dfc5ab036fac/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1692470717",
+   "rank": 472919
+  },
+  {
+   "id": 116585002,
+   "title": "Länge leve vi",
+   "artist": "Ison & Fille",
+   "artistIds": [
+    1233682,
+    4627195,
+    4424531
+   ],
+   "artistNames": [
+    "Ison & Fille",
+    "Ison",
+    "Fille Danza"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2015,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/80a323b3d31112fe25bf604589f7d77d/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/116585002",
+   "rank": 164287
+  },
+  {
+   "id": 607912622,
+   "title": "Wow",
+   "artist": "Ant Wan",
+   "artistIds": [
+    14749275
+   ],
+   "artistNames": [
+    "Ant Wan"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/cbfdc991081ffeefc3a0b6e1ec5b32e2/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/607912622",
+   "rank": 9664
+  },
+  {
+   "id": 72748478,
+   "title": "Knäpper mina fingrar",
+   "artist": "Linda Pira",
+   "artistIds": [
+    4666599,
+    662847
+   ],
+   "artistNames": [
+    "Linda Pira",
+    "Stor"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2013,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/4f6c0cffe048a6bef2bc17134a3ce290/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/72748478",
+   "rank": 87696
+  },
+  {
+   "id": 65276911,
+   "title": "Glider",
+   "artist": "Afasi & Filthy",
+   "artistIds": [
+    810282
+   ],
+   "artistNames": [
+    "Afasi & Filthy"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2013,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/5de478dae20a2b5c186aba90cafa20db/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/65276911",
+   "rank": 55654
+  },
+  {
+   "id": 1858905187,
+   "title": "These Walls Don't Lie",
+   "artist": "Promoe",
+   "artistIds": [
+    7975
+   ],
+   "artistNames": [
+    "Promoe"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2004,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/76e56caa0520b5526df1b444b181aa1c/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1858905187",
+   "rank": 205574
+  },
+  {
+   "id": 389791921,
+   "title": "Rygg mot rygg",
+   "artist": "Molly Sandén",
+   "artistIds": [
+    266270
+   ],
+   "artistNames": [
+    "Molly Sandén"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2017,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/7c7dcc464d1ba5591e45adac0ee7f3fe/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/389791921",
+   "rank": 67646
+  },
+  {
+   "id": 1503453642,
+   "title": "Gamora",
+   "artist": "Hov1",
+   "artistIds": [
+    9060182,
+    5339843
+   ],
+   "artistNames": [
+    "Hov1",
+    "Einár"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2021,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/be3e66640c8514b1f998b0cfc68e19cc/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1503453642",
+   "rank": 198592
+  },
+  {
+   "id": 2458649275,
+   "title": "Dans från dig",
+   "artist": "Einár",
+   "artistIds": [
+    5339843,
+    196212947,
+    5745284
+   ],
+   "artistNames": [
+    "Einár",
+    "Sara Kurt",
+    "Le Winter"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2023,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/a5ef38b6474c696965f2482195edceae/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/2458649275",
+   "rank": 238360
+  },
+  {
+   "id": 1093122682,
+   "title": "Hammarby",
+   "artist": "Einár",
+   "artistIds": [
+    5339843
+   ],
+   "artistNames": [
+    "Einár"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2020,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/1f50a7844138d65f62ca9a8368fc7793/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1093122682",
+   "rank": 228972
+  },
+  {
+   "id": 1777396057,
+   "title": "Kolla mig i ögonen",
+   "artist": "Einár",
+   "artistIds": [
+    5339843
+   ],
+   "artistNames": [
+    "Einár"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2022,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/e7aefddd625c184105720f1ee654148f/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1777396057",
+   "rank": 147768
+  },
+  {
+   "id": 2306016725,
+   "title": "Vill va med dig",
+   "artist": "Einár",
+   "artistIds": [
+    5339843
+   ],
+   "artistNames": [
+    "Einár"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2023,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/9de160caa7703adb789be6238a06a717/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/2306016725",
+   "rank": 183537
+  },
+  {
+   "id": 551175632,
+   "title": "Hon dansar vidare i livet",
+   "artist": "Hov1",
+   "artistIds": [
+    9060182
+   ],
+   "artistNames": [
+    "Hov1"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2018,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/552db588ecc228da0b6ad47dd33ef8a0/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/551175632",
+   "rank": 226545
+  },
+  {
+   "id": 678682302,
+   "title": "Hornstullsstrand",
+   "artist": "Hov1",
+   "artistIds": [
+    9060182,
+    74439
+   ],
+   "artistNames": [
+    "Hov1",
+    "Veronica Maggio"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/1a2378b98cb2d6632e7843e0a1cfeedb/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/678682302",
+   "rank": 240146
+  },
+  {
+   "id": 354196301,
+   "title": "Hov1",
+   "artist": "Hov1",
+   "artistIds": [
+    9060182
+   ],
+   "artistNames": [
+    "Hov1"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2017,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/6da0b033245eda04a3eea62ea7fc9f7a/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/354196301",
+   "rank": 111078
+  },
+  {
+   "id": 1386347342,
+   "title": "Blå",
+   "artist": "Hov1",
+   "artistIds": [
+    9060182
+   ],
+   "artistNames": [
+    "Hov1"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2021,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/94bcb30a1a8407faddca449a115b06bd/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1386347342",
+   "rank": 234348
+  },
+  {
+   "id": 2154413387,
+   "title": "Har Dig",
+   "artist": "Yasin",
+   "artistIds": [
+    64976
+   ],
+   "artistNames": [
+    "Yasin"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2023,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/d993ae95c7a3729ca94129a3baa76289/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/2154413387",
+   "rank": 273304
+  },
+  {
+   "id": 4183896832,
+   "title": "1991",
+   "artist": "Yasin",
+   "artistIds": [
+    64976
+   ],
+   "artistNames": [
+    "Yasin"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2026,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/8d55871e4ec6507901b8f1d6e97e3b3a/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/4183896832",
+   "rank": 202407
+  },
+  {
+   "id": 966066572,
+   "title": "Think About It",
+   "artist": "Yasin",
+   "artistIds": [
+    64976
+   ],
+   "artistNames": [
+    "Yasin"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2020,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/95484ed3612922749bff63d15fdd0761/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/966066572",
+   "rank": 134992
+  },
+  {
+   "id": 966066622,
+   "title": "Hiphop N RnB",
+   "artist": "Yasin",
+   "artistIds": [
+    64976
+   ],
+   "artistNames": [
+    "Yasin"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2020,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/95484ed3612922749bff63d15fdd0761/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/966066622",
+   "rank": 234542
+  },
+  {
+   "id": 593077762,
+   "title": "Hoodparty",
+   "artist": "Dree Low",
+   "artistIds": [
+    10248842,
+    4017963
+   ],
+   "artistNames": [
+    "Dree Low",
+    "Blizzy"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2017,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/850b9e92e79a8bfd7b5f018b59e515b6/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/593077762",
+   "rank": 203677
+  },
+  {
+   "id": 694085152,
+   "title": "På oss",
+   "artist": "Dree Low",
+   "artistIds": [
+    10248842
+   ],
+   "artistNames": [
+    "Dree Low"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/8722946b07f76d8906c1bde63a0d947e/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/694085152",
+   "rank": 155011
+  },
+  {
+   "id": 593077482,
+   "title": "För laxen",
+   "artist": "Dree Low",
+   "artistIds": [
+    10248842,
+    10470285,
+    4017963
+   ],
+   "artistNames": [
+    "Dree Low",
+    "Z.E",
+    "Blizzy"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2017,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/4c2b7be19e426c86942760c7538db046/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/593077482",
+   "rank": 174365
+  },
+  {
+   "id": 588565642,
+   "title": "Sverige Vet",
+   "artist": "Z.E",
+   "artistIds": [
+    10470285,
+    2543461
+   ],
+   "artistNames": [
+    "Z.E",
+    "Jiggz"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2018,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/bb9702f294d4fce0af84ef6551255dcd/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/588565642",
+   "rank": 137922
+  },
+  {
+   "id": 673724882,
+   "title": "Herren på Täppan",
+   "artist": "Z.E",
+   "artistIds": [
+    10470285,
+    7334
+   ],
+   "artistNames": [
+    "Z.E",
+    "Owen"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/380f68dc80dab484b45bbf9a5dd4e251/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/673724882",
+   "rank": 37631
+  },
+  {
+   "id": 658844562,
+   "title": "74 Bars",
+   "artist": "Z.E",
+   "artistIds": [
+    10470285
+   ],
+   "artistNames": [
+    "Z.E"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/dea1e809a722296fef98cff6c44ec06d/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/658844562",
+   "rank": 119517
+  },
+  {
+   "id": 4279405742,
+   "title": "LA LIGA",
+   "artist": "Greekazo",
+   "artistIds": [
+    70446672,
+    4805586,
+    10470285,
+    10711799,
+    158948222
+   ],
+   "artistNames": [
+    "Greekazo",
+    "Adaam",
+    "Z.E",
+    "Naod",
+    "NBLNATION"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2026,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/111fff4cb6fc3e33a61fafc7bb58ebec/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/4279405742",
+   "rank": 206333
+  },
+  {
+   "id": 1614608472,
+   "title": "MANO",
+   "artist": "Jireel",
+   "artistIds": [
+    9245294
+   ],
+   "artistNames": [
+    "Jireel"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2022,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/9a6bb213010cb0db0d49fdfd6685c9d2/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1614608472",
+   "rank": 228248
+  },
+  {
+   "id": 916240512,
+   "title": "Gav Allt",
+   "artist": "Jireel",
+   "artistIds": [
+    9245294,
+    14891881,
+    4061990
+   ],
+   "artistNames": [
+    "Jireel",
+    "Victor Leksell",
+    "Reyn"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2020,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/b433901b75c8d651347853a91592b745/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/916240512",
+   "rank": 150834
+  },
+  {
+   "id": 3523550351,
+   "title": "Genom Livet",
+   "artist": "Jireel",
+   "artistIds": [
+    9245294
+   ],
+   "artistNames": [
+    "Jireel"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2025,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/07b8e76eb790d3f17b9c025dee17adf7/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3523550351",
+   "rank": 163377
+  },
+  {
+   "id": 773386832,
+   "title": "FÖRSENT",
+   "artist": "1.Cuz",
+   "artistIds": [
+    56449262,
+    70446672,
+    9935446
+   ],
+   "artistNames": [
+    "1.Cuz",
+    "Greekazo",
+    "Yei Gonzalez"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/159f9c23dd87c70a870f689e3fb6678e/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/773386832",
+   "rank": 449992
+  },
+  {
+   "id": 818655262,
+   "title": "RÄKNA MINA DAGAR",
+   "artist": "1.Cuz",
+   "artistIds": [
+    56449262,
+    5339843,
+    9935446
+   ],
+   "artistNames": [
+    "1.Cuz",
+    "Einár",
+    "Yei Gonzalez"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/ca2d5c33fe66f1b86a72b72748ca2593/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/818655262",
+   "rank": 190613
+  },
+  {
+   "id": 818655272,
+   "title": "BILEN",
+   "artist": "1.Cuz",
+   "artistIds": [
+    56449262,
+    10248842,
+    9935446
+   ],
+   "artistNames": [
+    "1.Cuz",
+    "Dree Low",
+    "Yei Gonzalez"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/ca2d5c33fe66f1b86a72b72748ca2593/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/818655272",
+   "rank": 121007
+  },
+  {
+   "id": 1522339352,
+   "title": "Stockholm i natt",
+   "artist": "Cherrie",
+   "artistIds": [
+    8225742
+   ],
+   "artistNames": [
+    "Cherrie"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2021,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/da7690cb30dfe00405e82c789847adb4/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1522339352",
+   "rank": 121336
+  },
+  {
+   "id": 986844152,
+   "title": "Ingen annan än du",
+   "artist": "Cherrie",
+   "artistIds": [
+    8225742
+   ],
+   "artistNames": [
+    "Cherrie"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2020,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/d6923d2019658b4f0ac028f15ff30c96/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/986844152",
+   "rank": 101607
+  },
+  {
+   "id": 1925097237,
+   "title": "Lämna Han",
+   "artist": "Cherrie",
+   "artistIds": [
+    8225742
+   ],
+   "artistNames": [
+    "Cherrie"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2017,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/e22e9e3a8cb7be1f97511b8cdee22d0d/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1925097237",
+   "rank": 84745
+  },
+  {
+   "id": 1965393387,
+   "title": "Dum",
+   "artist": "Ant Wan",
+   "artistIds": [
+    14749275
+   ],
+   "artistNames": [
+    "Ant Wan"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2022,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/2917e244121770e21d830613bab4122d/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1965393387",
+   "rank": 132071
+  },
+  {
+   "id": 1256309462,
+   "title": "Malaika",
+   "artist": "Ant Wan",
+   "artistIds": [
+    14749275
+   ],
+   "artistNames": [
+    "Ant Wan"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2021,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/f63e68f7aef2d289eb4e91d1f2e8fd5a/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1256309462",
+   "rank": 152345
+  },
+  {
+   "id": 972496042,
+   "title": "Jag & Du",
+   "artist": "Ant Wan",
+   "artistIds": [
+    14749275
+   ],
+   "artistNames": [
+    "Ant Wan"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2020,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/baa8885958531afc52d27fac6e419e90/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/972496042",
+   "rank": 155389
+  },
+  {
+   "id": 3034174451,
+   "title": "Första Dagen",
+   "artist": "Silvana Imam",
+   "artistIds": [
+    4600862
+   ],
+   "artistNames": [
+    "Silvana Imam"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/f9ec320a8ec8b50ba2147d39af67c645/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3034174451",
+   "rank": 94420
+  },
+  {
+   "id": 3034174471,
+   "title": "Magi Som Orlando",
+   "artist": "Silvana Imam",
+   "artistIds": [
+    4600862,
+    4040470
+   ],
+   "artistNames": [
+    "Silvana Imam",
+    "Beatrice Eli"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/f9ec320a8ec8b50ba2147d39af67c645/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3034174471",
+   "rank": 94424
+  },
+  {
+   "id": 3034174461,
+   "title": "Vikken Då",
+   "artist": "Silvana Imam",
+   "artistIds": [
+    4600862
+   ],
+   "artistNames": [
+    "Silvana Imam"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/f9ec320a8ec8b50ba2147d39af67c645/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3034174461",
+   "rank": 96928
+  },
+  {
+   "id": 78516309,
+   "title": "Där dit vinden kommer (feat. Jaqe, Duvchi, jj & Joy)",
+   "artist": "Lorentz",
+   "artistIds": [
+    4556286,
+    4974011,
+    4433014,
+    343640,
+    83070
+   ],
+   "artistNames": [
+    "Lorentz",
+    "Jaqe",
+    "Duvchi",
+    "JJ",
+    "Joy"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2014,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/ec7d26f07ec79644d3d078ccca5a0f5b/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/78516309",
+   "rank": 118715
+  },
+  {
+   "id": 127678757,
+   "title": "Romeo",
+   "artist": "Lorentz",
+   "artistIds": [
+    4556286
+   ],
+   "artistNames": [
+    "Lorentz"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2016,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/08eeb38c7df37d3c20e13cb8cda634cd/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/127678757",
+   "rank": 30728
+  },
+  {
+   "id": 78516305,
+   "title": "Allt från mig",
+   "artist": "Lorentz",
+   "artistIds": [
+    4556286
+   ],
+   "artistNames": [
+    "Lorentz"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2014,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/ec7d26f07ec79644d3d078ccca5a0f5b/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/78516305",
+   "rank": 16038
+  },
+  {
+   "id": 3710681572,
+   "title": "Hurricane",
+   "artist": "Newkid",
+   "artistIds": [
+    438553
+   ],
+   "artistNames": [
+    "Newkid"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2026,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/b2f4887f85218a14f6ba7b569193fbd6/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3710681572",
+   "rank": 224450
+  },
+  {
+   "id": 4013374501,
+   "title": "Farligaste",
+   "artist": "Newkid",
+   "artistIds": [
+    438553
+   ],
+   "artistNames": [
+    "Newkid"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2026,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/24583a3dfb40e4fa95838c5c26226c74/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/4013374501",
+   "rank": 145960
+  },
+  {
+   "id": 930236492,
+   "title": "Kanske var vi rätt bra ändå",
+   "artist": "Newkid",
+   "artistIds": [
+    438553
+   ],
+   "artistNames": [
+    "Newkid"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2020,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/2e752bb684dcc77811ad21239f9840e2/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/930236492",
+   "rank": 194158
+  },
+  {
+   "id": 693714642,
+   "title": "Min lane",
+   "artist": "Aden x Asme",
+   "artistIds": [
+    64571672
+   ],
+   "artistNames": [
+    "Aden x Asme"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/5f5905c8506e5db96112301191c66320/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/693714642",
+   "rank": 206166
+  },
+  {
+   "id": 693714672,
+   "title": "Dripping (feat. Naod)",
+   "artist": "Aden x Asme",
+   "artistIds": [
+    64571672,
+    10711799
+   ],
+   "artistNames": [
+    "Aden x Asme",
+    "Naod"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/5f5905c8506e5db96112301191c66320/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/693714672",
+   "rank": 149502
+  },
+  {
+   "id": 693714722,
+   "title": "Good Girl Gone Bad",
+   "artist": "Aden x Asme",
+   "artistIds": [
+    64571672
+   ],
+   "artistNames": [
+    "Aden x Asme"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/5f5905c8506e5db96112301191c66320/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/693714722",
+   "rank": 132914
+  },
+  {
+   "id": 91143373,
+   "title": "Nu måste vi dra",
+   "artist": "Ken Ring",
+   "artistIds": [
+    288264
+   ],
+   "artistNames": [
+    "Ken Ring"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2014,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/9191659eb6bda779ce113dbc78924fac/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/91143373",
+   "rank": 98572
+  },
+  {
+   "id": 61625286,
+   "title": "Jag vaknar upp",
+   "artist": "Ken Ring",
+   "artistIds": [
+    288264
+   ],
+   "artistNames": [
+    "Ken Ring"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2007,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/f965e5dc6bd944af926aa790b8a0231d/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/61625286",
+   "rank": 93007
+  },
+  {
+   "id": 92473058,
+   "title": "Själen av en vän",
+   "artist": "Ken Ring",
+   "artistIds": [
+    288264,
+    15563
+   ],
+   "artistNames": [
+    "Ken Ring",
+    "Million Stylez"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2012,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/ca1d38c21a0f536b85de526155f68288/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/92473058",
+   "rank": 32666
+  },
+  {
+   "id": 15875246,
+   "title": "Flickan och kråkan",
+   "artist": "Timbuktu",
+   "artistIds": [
+    6659
+   ],
+   "artistNames": [
+    "Timbuktu"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2011,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/f651f07ecbc8c5ff6d873c49716b0824/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/15875246",
+   "rank": 150498
+  },
+  {
+   "id": 71246602,
+   "title": "Inte stor nog",
+   "artist": "Timbuktu",
+   "artistIds": [
+    6659
+   ],
+   "artistNames": [
+    "Timbuktu"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2013,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/98d317d5125c9a24c740b6200d99fdf2/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/71246602",
+   "rank": 176889
+  },
+  {
+   "id": 16328894,
+   "title": "Fallskärm",
+   "artist": "Timbuktu",
+   "artistIds": [
+    6659
+   ],
+   "artistNames": [
+    "Timbuktu"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2012,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/ba6faf4cadfb3d8cf9200c748591cb2c/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/16328894",
+   "rank": 152867
+  },
+  {
+   "id": 598605702,
+   "title": "Säga mig (feat. Jireel)",
+   "artist": "Stor",
+   "artistIds": [
+    662847,
+    9245294
+   ],
+   "artistNames": [
+    "Stor",
+    "Jireel"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2018,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/02c6b561be417ac8a51cbfb053809006/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/598605702",
+   "rank": 137405
+  },
+  {
+   "id": 3971831921,
+   "title": "Higher Calling",
+   "artist": "Stor",
+   "artistIds": [
+    662847,
+    2982451
+   ],
+   "artistNames": [
+    "Stor",
+    "Miriam Bryant"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2026,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/42c24a84c697af73871efb34e68eee75/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3971831921",
+   "rank": 106939
+  },
+  {
+   "id": 3427576031,
+   "title": "MON AMI",
+   "artist": "Thrife",
+   "artistIds": [
+    13707665
+   ],
+   "artistNames": [
+    "Thrife"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2025,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/ccd2ff28277f58b198d52a58004bf89c/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3427576031",
+   "rank": 39443
+  },
+  {
+   "id": 794945182,
+   "title": "Pineapple Kush",
+   "artist": "Thrife",
+   "artistIds": [
+    13707665
+   ],
+   "artistNames": [
+    "Thrife"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/6e24ec6a32514f6dec57d653bfe11064/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/794945182",
+   "rank": 158188
+  },
+  {
+   "id": 3705704602,
+   "title": "MY LOVE",
+   "artist": "Haval",
+   "artistIds": [
+    55234942
+   ],
+   "artistNames": [
+    "Haval"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2024,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/b01008af489ac16c636ad9924bb2ec1f/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3705704602",
+   "rank": 155345
+  },
+  {
+   "id": 3709085792,
+   "title": "SOUTHSIDE",
+   "artist": "Haval",
+   "artistIds": [
+    55234942
+   ],
+   "artistNames": [
+    "Haval"
+   ],
+   "cats": [
+    "alla",
+    "hiphop"
+   ],
+   "year": 2023,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/425797c6c76a24f47ac9af004bcd1eba/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3709085792",
+   "rank": 181179
+  },
+  {
+   "id": 2543711601,
+   "title": "Ramla",
+   "artist": "Victor Leksell",
+   "artistIds": [
+    14891881
+   ],
+   "artistNames": [
+    "Victor Leksell"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2023,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/7b44facd7f334b5ce710bfa43fc50236/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/2543711601",
+   "rank": 263785
+  },
+  {
+   "id": 4169530982,
+   "title": "Tänk om",
+   "artist": "Victor Leksell",
+   "artistIds": [
+    14891881,
+    266270
+   ],
+   "artistNames": [
+    "Victor Leksell",
+    "Molly Sandén"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2026,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/4ca668edccde3ae1c1766539778f5477/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/4169530982",
+   "rank": 309232
+  },
+  {
+   "id": 1235026712,
+   "title": "tystnar i luren",
+   "artist": "Miriam Bryant",
+   "artistIds": [
+    2982451,
+    14891881
+   ],
+   "artistNames": [
+    "Miriam Bryant",
+    "Victor Leksell"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2021,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/fe388e6804059739312d61b2bb04f359/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1235026712",
+   "rank": 269706
+  },
+  {
+   "id": 2070249547,
+   "title": "Under någon ny",
+   "artist": "Miriam Bryant",
+   "artistIds": [
+    2982451,
+    74439
+   ],
+   "artistNames": [
+    "Miriam Bryant",
+    "Veronica Maggio"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2023,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/1cf941043ad0ca3866b3d9b8aeaea0e3/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/2070249547",
+   "rank": 213959
+  },
+  {
+   "id": 115704502,
+   "title": "Ett sista glas",
+   "artist": "Miriam Bryant",
+   "artistIds": [
+    2982451
+   ],
+   "artistNames": [
+    "Miriam Bryant"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2023,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/a11525c38f7cb53f3b0e6ff14bde6956/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/115704502",
+   "rank": 207691
+  },
+  {
+   "id": 4022722901,
+   "title": "Bara mellan oss",
+   "artist": "Oskar Linnros",
+   "artistIds": [
+    343414
+   ],
+   "artistNames": [
+    "Oskar Linnros"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2026,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/18d89a9437f2ab39ba8c0dd7ba9e45ae/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/4022722901",
+   "rank": 170795
+  },
+  {
+   "id": 67235484,
+   "title": "Från balkongen",
+   "artist": "Oskar Linnros",
+   "artistIds": [
+    343414
+   ],
+   "artistNames": [
+    "Oskar Linnros"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2013,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/f7f96a8b3ce778bb3bbf5b167fdf825b/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/67235484",
+   "rank": 188571
+  },
+  {
+   "id": 4279395592,
+   "title": "waste my time",
+   "artist": "Benjamin Ingrosso",
+   "artistIds": [
+    9027174
+   ],
+   "artistNames": [
+    "Benjamin Ingrosso"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2026,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/0e05b4c1c4913ec2c4dcf305945537df/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/4279395592",
+   "rank": 550735
+  },
+  {
+   "id": 4279395642,
+   "title": "funny feeling",
+   "artist": "Benjamin Ingrosso",
+   "artistIds": [
+    9027174
+   ],
+   "artistNames": [
+    "Benjamin Ingrosso"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2026,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/4449fe1068c90a44dcf811ae97350ffb/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/4279395642",
+   "rank": 444411
+  },
+  {
+   "id": 1192938722,
+   "title": "Se men inte röra",
+   "artist": "Benjamin Ingrosso",
+   "artistIds": [
+    9027174
+   ],
+   "artistNames": [
+    "Benjamin Ingrosso"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2021,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/47bbddeafd642ba07a0a367f3aa4710c/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1192938722",
+   "rank": 228958
+  },
+  {
+   "id": 3346065121,
+   "title": "Tusen spänn",
+   "artist": "Tjuvjakt",
+   "artistIds": [
+    4067124,
+    320692931
+   ],
+   "artistNames": [
+    "Tjuvjakt",
+    "Fanny Avonne"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2025,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/46c63b3bab410d6b901f5ebf74e2e6d7/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3346065121",
+   "rank": 253902
+  },
+  {
+   "id": 365264791,
+   "title": "Tårarna i halsen",
+   "artist": "Tjuvjakt",
+   "artistIds": [
+    4067124
+   ],
+   "artistNames": [
+    "Tjuvjakt"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2017,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/40ba828c0081c37b4a660f08065340d5/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/365264791",
+   "rank": 175023
+  },
+  {
+   "id": 67321744,
+   "title": "Dagen efter",
+   "artist": "Tjuvjakt",
+   "artistIds": [
+    4067124
+   ],
+   "artistNames": [
+    "Tjuvjakt"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2013,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/3e3b71cfc85f27a5a2ad6a3a8f3bad0e/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/67321744",
+   "rank": 165809
+  },
+  {
+   "id": 735460542,
+   "title": "Bra för dig",
+   "artist": "estraden",
+   "artistIds": [
+    68217102,
+    14891881
+   ],
+   "artistNames": [
+    "estraden",
+    "Victor Leksell"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/31c10c3dca1cfff6caafd2c4b94d4a3f/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/735460542",
+   "rank": 240723
+  },
+  {
+   "id": 1433659252,
+   "title": "Sommarn är över (feat. Eah Jé)",
+   "artist": "estraden",
+   "artistIds": [
+    68217102,
+    166225537
+   ],
+   "artistNames": [
+    "estraden",
+    "Eah Jé"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2021,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/5a43dc895ca9455be2a61e0d7209c374/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1433659252",
+   "rank": 168774
+  },
+  {
+   "id": 650490952,
+   "title": "Rosa himmel (från \"Störst av allt\")",
+   "artist": "Molly Sandén",
+   "artistIds": [
+    266270
+   ],
+   "artistNames": [
+    "Molly Sandén"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/70274a74c6ed7085c6a3e446a8298c50/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/650490952",
+   "rank": 272251
+  },
+  {
+   "id": 3578088351,
+   "title": "Där runt hörnet",
+   "artist": "Molly Sandén",
+   "artistIds": [
+    266270
+   ],
+   "artistNames": [
+    "Molly Sandén"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2025,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/4dc06ed4774c903381c020090b019a0f/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3578088351",
+   "rank": 241880
+  },
+  {
+   "id": 3869293291,
+   "title": "Superlim & silvertejp",
+   "artist": "Molly Sandén",
+   "artistIds": [
+    266270,
+    2982451
+   ],
+   "artistNames": [
+    "Molly Sandén",
+    "Miriam Bryant"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2026,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/291709db676870aa5e9295353104ab64/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3869293291",
+   "rank": 263507
+  },
+  {
+   "id": 121977794,
+   "title": "Bara Få Va Mig Själv",
+   "artist": "Laleh",
+   "artistIds": [
+    16638
+   ],
+   "artistNames": [
+    "Laleh"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2016,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/7d9742e5bbb716e87b56551997efec1d/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/121977794",
+   "rank": 208286
+  },
+  {
+   "id": 686686262,
+   "title": "Svenska 2",
+   "artist": "Laleh",
+   "artistIds": [
+    16638
+   ],
+   "artistNames": [
+    "Laleh"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/15e03d4dd2da0e6d3643e4d2f73dc36e/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/686686262",
+   "rank": 105864
+  },
+  {
+   "id": 980590,
+   "title": "17 år",
+   "artist": "Veronica Maggio",
+   "artistIds": [
+    74439
+   ],
+   "artistNames": [
+    "Veronica Maggio"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/a49cc9d77961d9e74235bf4d6dda6116/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/980590",
+   "rank": 290259
+  },
+  {
+   "id": 1750208357,
+   "title": "Låt mig gå",
+   "artist": "Veronica Maggio",
+   "artistIds": [
+    74439
+   ],
+   "artistNames": [
+    "Veronica Maggio"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2022,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/60c7b78cda3d103d20ece51eb0ac9477/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1750208357",
+   "rank": 244645
+  },
+  {
+   "id": 3401554271,
+   "title": "Midnight Sun",
+   "artist": "Zara Larsson",
+   "artistIds": [
+    4331004
+   ],
+   "artistNames": [
+    "Zara Larsson"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2025,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/19bf09a63824955c504abea3f958c584/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/3401554271",
+   "rank": 938912
+  },
+  {
+   "id": 4249664401,
+   "title": "Me/You (always and forever)",
+   "artist": "Tove Styrke",
+   "artistIds": [
+    320256
+   ],
+   "artistNames": [
+    "Tove Styrke"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2026,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/cecc731549705bf3f91af3f31ac0488b/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/4249664401",
+   "rank": 172525
+  },
+  {
+   "id": 1135921312,
+   "title": "Bara du och jag",
+   "artist": "Tove Styrke",
+   "artistIds": [
+    320256
+   ],
+   "artistNames": [
+    "Tove Styrke"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2020,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/d7fc41f12233a492d17c746c3b17aa41/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1135921312",
+   "rank": 177215
+  },
+  {
+   "id": 2226363037,
+   "title": "Andas in andas ut",
+   "artist": "Thomas Stenström",
+   "artistIds": [
+    989434
+   ],
+   "artistNames": [
+    "Thomas Stenström"
+   ],
+   "cats": [
+    "alla",
+    "pop"
+   ],
+   "year": 2023,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/6ea702aaf5f63732ab44dab13f855a4c/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/2226363037",
+   "rank": 212010
+  },
+  {
+   "id": 2638769072,
+   "title": "Awful Liar",
+   "artist": "Lisa Ajax",
+   "artistIds": [
+    7077463
+   ],
+   "artistNames": [
+    "Lisa Ajax"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2024,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/fcebb715e84da39a873854f7032616ee/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/2638769072",
+   "rank": 185648
+  },
+  {
+   "id": 640611832,
+   "title": "Torn",
+   "artist": "Lisa Ajax",
+   "artistIds": [
+    7077463
+   ],
+   "artistNames": [
+    "Lisa Ajax"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/8782d2079430ef82c7aa18e9618f426f/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/640611832",
+   "rank": 112157
+  },
+  {
+   "id": 104775736,
+   "title": "Dör för dig",
+   "artist": "Danny Saucedo",
+   "artistIds": [
+    1197491
+   ],
+   "artistNames": [
+    "Danny Saucedo"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2015,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/a408aa67a47b83a123c613b1bf7af2eb/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/104775736",
+   "rank": 180345
+  },
+  {
+   "id": 98773532,
+   "title": "Brinner i bröstet (feat. Malcolm B)",
+   "artist": "Danny Saucedo",
+   "artistIds": [
+    1197491,
+    4806288
+   ],
+   "artistNames": [
+    "Danny Saucedo",
+    "Malcolm B"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2015,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/c864c75f7f20a83fbcd1d8f78114c357/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/98773532",
+   "rank": 113777
+  },
+  {
+   "id": 2090495247,
+   "title": "Möt mig i Gamla Stan",
+   "artist": "Magnus Carlsson",
+   "artistIds": [
+    66676
+   ],
+   "artistNames": [
+    "Magnus Carlsson"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2015,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/39993b3e5c7c5a234e35b86bbed2a95f/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/2090495247",
+   "rank": 158439
+  },
+  {
+   "id": 2000402897,
+   "title": "Kom hem",
+   "artist": "Magnus Carlsson",
+   "artistIds": [
+    66676
+   ],
+   "artistNames": [
+    "Magnus Carlsson"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2019,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/cb7f8920250ff6d64a7eda109e03de5c/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/2000402897",
+   "rank": 107525
+  },
+  {
+   "id": 1018676,
+   "title": "Dina färger var blå",
+   "artist": "Tommy Nilsson",
+   "artistIds": [
+    70431
+   ],
+   "artistNames": [
+    "Tommy Nilsson"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2001,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/973b00b43e492ce17096d3a8e7859686/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/1018676",
+   "rank": 143447
+  },
+  {
+   "id": 635792,
+   "title": "Öppna din dörr",
+   "artist": "Tommy Nilsson",
+   "artistIds": [
+    70431
+   ],
+   "artistNames": [
+    "Tommy Nilsson"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2003,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/6483510ff70fca0c941be08b5b887256/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/635792",
+   "rank": 192842
+  },
+  {
+   "id": 62230906,
+   "title": "Du är allt",
+   "artist": "Sonja Aldén",
+   "artistIds": [
+    74383
+   ],
+   "artistNames": [
+    "Sonja Aldén"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2012,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/017501bfcfb482352cf52b36c9535799/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/62230906",
+   "rank": 200010
+  },
+  {
+   "id": 2718280,
+   "title": "För att du finns",
+   "artist": "Sonja Aldén",
+   "artistIds": [
+    74383
+   ],
+   "artistNames": [
+    "Sonja Aldén"
+   ],
+   "cats": [
+    "alla",
+    "mello"
+   ],
+   "year": 2008,
+   "cover": "https://cdn-images.dzcdn.net/images/cover/cf9afc4affd6eb1b680f4e6d41269c9e/1000x1000-000000-80-0-0.jpg",
+   "link": "https://www.deezer.com/track/2718280",
+   "rank": 104998
+  }
+ ]
+}

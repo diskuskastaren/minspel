@@ -1,0 +1,158 @@
+/* ---------------------------------------------------------------
+   Klurig – designsystem
+   Varm papperston, bläckblått, saffran och lingon. Egen identitet.
+   --------------------------------------------------------------- */
+
+:root {
+  --paper: #f3ede2;
+  --paper-2: #e9e0cf;
+  --paper-3: #ded2bd;
+  --card: #fbf7ef;
+  --ink: #1b2340;
+  --ink-2: #454c68;
+  --ink-3: #7c8098;
+  --line: rgba(27, 35, 64, 0.14);
+  --line-strong: rgba(27, 35, 64, 0.28);
+
+  --saffron: #e5a019;
+  --saffron-soft: #f6dc9f;
+  --lingon: #c43a2f;
+  --lingon-soft: #f0c4bd;
+  --pine: #2f7d5b;
+  --pine-soft: #bfe0cf;
+  --skip: #cfc4b0;
+
+  --good: var(--pine);
+  --good-soft: var(--pine-soft);
+  --half: var(--saffron);
+  --half-soft: var(--saffron-soft);
+  --bad: var(--lingon);
+  --bad-soft: var(--lingon-soft);
+
+  --shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 10px 30px -18px rgba(27, 35, 64, 0.45);
+  --radius: 18px;
+  --radius-sm: 10px;
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --grain-opacity: 0.35;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #12152a;
+    --paper-2: #1a1e36;
+    --paper-3: #252a47;
+    --card: #1c2039;
+    --ink: #f1e9da;
+    --ink-2: #c9c1b2;
+    --ink-3: #8d8aa0;
+    --line: rgba(241, 233, 218, 0.12);
+    --line-strong: rgba(241, 233, 218, 0.26);
+    --saffron-soft: #5a4414;
+    --lingon: #e0594d;
+    --lingon-soft: #5c2420;
+    --pine: #4fae84;
+    --pine-soft: #1d4a37;
+    --skip: #3a3f5e;
+    --shadow: 0 1px 0 rgba(255, 255, 255, 0.04) inset, 0 14px 34px -18px rgba(0, 0, 0, 0.8);
+    --grain-opacity: 0.18;
+  }
+}
+
+/* Färgblindläge (klass sätts på <html>) */
+.cb {
+  --good: #2f6fde;
+  --good-soft: #c7d8f7;
+  --half: #f07c2b;
+  --half-soft: #fbd6bb;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Papperskorn – ett fast brusfilter över hela sidan */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 100;
+  opacity: var(--grain-opacity);
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.1  0 0 0 0 0.1  0 0 0 0 0.2  0 0 0 .22 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+@media (prefers-color-scheme: dark) {
+  body::before {
+    mix-blend-mode: screen;
+  }
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2.5px solid var(--saffron);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.display {
+  font-family: var(--font-display), Georgia, serif;
+  font-variation-settings: "SOFT" 100, "WONK" 1;
+}
+
+.mono {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
