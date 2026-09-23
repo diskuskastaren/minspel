@@ -1,7 +1,7 @@
 # Blueprint: Svensk samling dagliga ordspel och frågespel
 
 > **Status:** Specifikation v1.0 · 2026-09-23
-> **Underlag:** Analys av lessgames.com (se [docs/BILAGA-lessgames-research.md](docs/BILAGA-lessgames-research.md) för rådata, API-kontrakt och källmärkning).
+> **Underlag:** Analys av lessgames.com (se [docs/BILAGA-lessgames-research.md](docs/BILAGA-lessgames-research.md) för rådata, API-kontrakt och källmärkning). Kompletterande produktkrav (robusthet, tillgänglighet, datakällor, edge cases) från en extern undersökning finns i [docs/BILAGA-extern-undersokning.md](docs/BILAGA-extern-undersokning.md).
 > **Arbetsnamn:** **Klurig** (platshållare, byt med sök-och-ersätt). Alla spelnamn nedan är förslag.
 >
 > Dokumentet beskriver *vad* vi bygger och *varför*. Det kopierar inte Lessgames visuella design, texter, varumärke eller innehåll. Vi tar över genreidén: dagliga, snabba och delbara minispel.
