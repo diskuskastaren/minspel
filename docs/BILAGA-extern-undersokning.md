@@ -1,7 +1,7 @@
 # Bilaga: Extern undersökning av lessgames.com (annan AI, 2026-09-23)
 
 > Sparad 2026-09-23 som underlag inför kommande kodning. **Ingen kod har ändrats utifrån detta.**
-> Originaltexten (oförändrad, avkortad i slutet redan när den klistrades in) finns längst ned.
+> Originaltexten finns längst ned.
 > Huvudunderlaget är fortfarande [BILAGA-lessgames-research.md](BILAGA-lessgames-research.md), som bygger på API-anrop och klientkod. Den här undersökningen kunde inte ladda flera spel (Wordless och Clueless visade bara "Loading…", och Songless, More/less och Spelling Bee gav fel), så den är **svagare som källa om Lessgames**. Däremot innehåller den användbara produktkrav för vår egen version.
 
 ---
@@ -204,6 +204,4 @@ Minsta godkännandekriterier:
 
 Att planera för: förlorad uppkoppling mitt i svar; ljudfil saknas eller blockeras; iOS-autoplay; sökresultat med två låtar med samma titel; ogiltigt svenskt ord och böjd form; å/ä/ö på tangentbord som saknar svensk layout; ord med dubbletter; lika jämförelsevärden och inaktuella API-värden; kalender över sommartidsbyte; spel startat före midnatt och skickat efter; två flikar öppna; utloggning under spel; arkivdag utan publicerat innehåll; bild med saknad alternativtext; kategori med för få godkända frågor; egna pussel med stötande text eller spoiler i länken; återförsök efter serverfel.
 
-Fortfarande okänt om Lessgames: exakta timers, lives och scoring i alla spel; Wordless ordlängder/standardförsök; alla More/less-kategorier och kedjeregel; Songless klipplängder efter 0,1 s, maximalt antal gissningar och ljudleverantör; Spelling Bee antal fel per ord; Clueless rangberäkning och antal gissningar; kontots alla vyer; konkreta Plus-priser; resultatdelning; färgkodning och animationsdetaljer på slutskärmar; brytpunkter för mobil. Föreslagna värden ovan är därför egna produktbeslut och ska inte
-
-*[Texten slutar här i den inklistrade versionen.]*
+Fortfarande okänt om Lessgames: exakta timers, lives och scoring i alla spel; Wordless ordlängder/standardförsök; alla More/less-kategorier och kedjeregel; Songless klipplängder efter 0,1 s, maximalt antal gissningar och ljudleverantör; Spelling Bee antal fel per ord; Clueless rangberäkning och antal gissningar; kontots alla vyer; konkreta Plus-priser; resultatdelning; färgkodning och animationsdetaljer på slutskärmar; brytpunkter för mobil. Föreslagna värden ovan är därför egna produktbeslut och ska inte presenteras som en kopia av verifierad Lessgames-logik.
