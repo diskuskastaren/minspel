@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
-import s from "./oronmask.module.css";
+import s from "./ui.module.css";
 
 type Props = {
   open: boolean;

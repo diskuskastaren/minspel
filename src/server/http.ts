@@ -1,6 +1,6 @@
 import "server-only";
 import { NextResponse } from "next/server";
-import { GameError } from "./oronmask-service";
+import { GameError } from "./errors";
 import { UpstreamError } from "./deezer";
 
 export function errorResponse(e: unknown): NextResponse {

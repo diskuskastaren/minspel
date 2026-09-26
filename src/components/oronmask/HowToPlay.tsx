@@ -1,13 +1,14 @@
 "use client";
 import { STEPS, formatSeconds } from "@/game-engine/oronmask";
+import u from "@/components/ui/ui.module.css";
 import s from "./oronmask.module.css";
 
 export function HowToPlay() {
   return (
     <div className={s.htp}>
-      <p className={s.eyebrow}>Så spelar du</p>
-      <h2 className={`display ${s.htpTitle}`}>Känner du igen låten?</h2>
-      <ol className={s.htpSteps}>
+      <p className={u.eyebrow}>Så spelar du</p>
+      <h2 className={`display ${u.htpTitle}`}>Känner du igen låten?</h2>
+      <ol className={u.htpSteps}>
         <li>
           <span>
             <strong>Lyssna</strong> på ett kort klipp. Första gången får du bara {formatSeconds(STEPS[0])}.
@@ -25,21 +26,21 @@ export function HowToPlay() {
           </span>
         </li>
       </ol>
-      <ul className={s.htpLegend}>
+      <ul className={u.htpLegend}>
         <li>
-          <span className={`${s.chip} ${s.chipGood}`} /> Rätt låt
+          <span className={`${u.chip} ${u.chipGood}`} /> Rätt låt
         </li>
         <li>
-          <span className={`${s.chip} ${s.chipHalf}`} /> Rätt artist, fel låt
+          <span className={`${u.chip} ${u.chipHalf}`} /> Rätt artist, fel låt
         </li>
         <li>
-          <span className={`${s.chip} ${s.chipBad}`} /> Fel
+          <span className={`${u.chip} ${u.chipBad}`} /> Fel
         </li>
         <li>
-          <span className={`${s.chip} ${s.chipSkip}`} /> Överhoppad
+          <span className={`${u.chip} ${u.chipSkip}`} /> Överhoppad
         </li>
       </ul>
-      <p className={s.htpFoot}>Fyra nya låtar varje dag, en per kategori. Nya låtar vid midnatt.</p>
+      <p className={u.htpFoot}>Fyra nya låtar varje dag, en per kategori. Nya låtar vid midnatt.</p>
     </div>
   );
 }

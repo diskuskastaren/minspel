@@ -7,12 +7,13 @@ import type { GameState, SearchHit } from "@/game-engine/oronmask-api-types";
 import { ApiError, api, errorText } from "./api";
 import { Board } from "./Board";
 import { HowToPlay } from "./HowToPlay";
-import { Modal } from "./Modal";
+import { Modal } from "@/components/ui/Modal";
 import { ResultSheet } from "./ResultSheet";
 import { SearchBox, type SearchBoxHandle } from "./SearchBox";
 import { Timeline } from "./Timeline";
 import { Vinyl } from "./Vinyl";
 import { useClipPlayer } from "./useClipPlayer";
+import u from "@/components/ui/ui.module.css";
 import s from "./oronmask.module.css";
 
 const HTP_KEY = "klurig:oronmask:htp";
@@ -212,10 +213,10 @@ export function OronmaskGame() {
   if (loadError) {
     return (
       <main className={s.page}>
-        <div className={s.fatal}>
+        <div className={u.fatal}>
           <p className="display">Nu hakade skivan upp sig.</p>
           <p>{loadError}</p>
-          <button type="button" className={s.btnPrimary} onClick={() => void load()}>
+          <button type="button" className={u.btnPrimary} onClick={() => void load()}>
             Försök igen
           </button>
         </div>
@@ -230,49 +231,49 @@ export function OronmaskGame() {
 
   return (
     <main className={s.page}>
-      <header className={s.header}>
-        <Link href="/" className={s.back} aria-label="Till Klurig startsida">
+      <header className={u.header}>
+        <Link href="/" className={u.back} aria-label="Till Klurig startsida">
           <span aria-hidden="true">←</span> Klurig
         </Link>
-        <div className={s.brand}>
-          <h1 className={`display ${s.title}`}>Öronmask</h1>
-          <p className={s.subtitle}>
+        <div className={u.brand}>
+          <h1 className={`display ${u.title}`}>Öronmask</h1>
+          <p className={u.subtitle}>
             {data ? (
               <>
                 <span className="mono">#{data.number}</span> · {formatLongDate(data.date)}
-                {data.isArchive && <span className={s.archiveTag}>arkiv</span>}
+                {data.isArchive && <span className={u.archiveTag}>arkiv</span>}
               </>
             ) : (
               " "
             )}
           </p>
         </div>
-        <button type="button" className={s.iconBtn} onClick={() => setShowHelp(true)} aria-label="Så spelar du">
+        <button type="button" className={u.iconBtn} onClick={() => setShowHelp(true)} aria-label="Så spelar du">
           ?
         </button>
       </header>
 
-      <nav className={s.tabs} aria-label="Kategorier">
+      <nav className={u.tabs} aria-label="Kategorier">
         {(data?.categories ?? []).map((c) => {
           const done = c.session.state !== "ongoing";
           return (
             <button
               key={c.slug}
               type="button"
-              className={`${s.tab} ${c.slug === cat ? s.tabActive : ""} ${done ? (c.session.state === "won" ? s.tabWon : s.tabLost) : ""}`}
+              className={`${u.tab} ${c.slug === cat ? u.tabActive : ""} ${done ? (c.session.state === "won" ? u.tabWon : u.tabLost) : ""}`}
               aria-current={c.slug === cat ? "page" : undefined}
               aria-disabled={locked && c.slug !== cat}
               onClick={() => switchCat(c.slug)}
             >
               <span className={s.tabName}>{c.short}</span>
-              {done && <span className={s.tabMark} aria-label={c.session.state === "won" ? "klarad" : "missad"} />}
+              {done && <span className={u.tabMark} aria-label={c.session.state === "won" ? "klarad" : "missad"} />}
             </button>
           );
         })}
       </nav>
 
       {!session || !current ? (
-        <div className={s.skeleton} aria-busy="true" aria-label="Laddar dagens låt" />
+        <div className={u.skeleton} aria-busy="true" aria-label="Laddar dagens låt" />
       ) : (
         <>
           <section className={s.deck} aria-label={`Dagens låt – ${current.name}`}>
@@ -299,7 +300,7 @@ export function OronmaskGame() {
                 <SearchBox ref={searchRef} selected={selected} onSelect={setSelected} onSubmit={() => selected && void submit(selected.id)} disabled={pending} />
                 <button
                   type="button"
-                  className={`${selected ? s.btnPrimary : lastTry ? s.btnDanger : s.btnGhost} ${s.actionBtn}`}
+                  className={`${selected ? u.btnPrimary : lastTry ? u.btnDanger : u.btnGhost} ${s.actionBtn}`}
                   onClick={() => void submit(selected ? selected.id : null)}
                   disabled={pending}
                 >
@@ -311,7 +312,7 @@ export function OronmaskGame() {
                 <span>
                   {session.state === "won" ? "Klarad!" : "Missad."} Låten var <strong>{session.answer?.title}</strong>
                 </span>
-                <button type="button" className={s.btnPrimary} onClick={() => setShowResult(true)}>
+                <button type="button" className={u.btnPrimary} onClick={() => setShowResult(true)}>
                   Visa resultat
                 </button>
               </div>
@@ -321,7 +322,7 @@ export function OronmaskGame() {
       )}
 
       {IS_DEV && data && (
-        <footer className={s.devbar}>
+        <footer className={u.devbar}>
           <span>Utvecklingsläge</span>
           <button
             type="button"
@@ -340,7 +341,7 @@ export function OronmaskGame() {
 
       <Modal open={showHelp} onClose={() => setShowHelp(false)} title="Så spelar du" returnFocus={() => searchRef.current?.focus()}>
         <HowToPlay />
-        <button type="button" className={`${s.btnPrimary} ${s.htpGo}`} onClick={() => setShowHelp(false)}>
+        <button type="button" className={`${u.btnPrimary} ${u.htpGo}`} onClick={() => setShowHelp(false)}>
           Jag är redo
         </button>
       </Modal>
@@ -367,9 +368,9 @@ export function OronmaskGame() {
         </Modal>
       )}
 
-      <div className={s.toastRegion} aria-live="polite">
+      <div className={u.toastRegion} aria-live="polite">
         {toast && (
-          <div key={toast.id} className={`${s.toast} ${s[`toast_${toast.tone}`]}`}>
+          <div key={toast.id} className={`${u.toast} ${u[`toast_${toast.tone}`]}`}>
             {toast.text}
           </div>
         )}

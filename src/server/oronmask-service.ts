@@ -17,33 +17,24 @@ import {
 } from "@/game-engine/oronmask";
 import type { GameState, PublicSession, Reveal } from "@/game-engine/oronmask-api-types";
 import { normalizeText } from "@/lib/normalize";
-import { addDays, msUntilNextDay, startOfStockholmDay, stockholmDate } from "@/lib/time";
+import { msUntilNextDay } from "@/lib/time";
 import { sliceMp3 } from "@/lib/mp3";
 import { getCatalog } from "./catalog";
 import { getFreshPreviewUrl, getPreviewBytes, getTrackInfo, searchTracks, type SearchHit } from "./deezer";
-import { getSession, listSessions, saveSession } from "./store";
+import { resolveDate as resolveDateFor, IS_DEV } from "./dates";
+import { GameError } from "./errors";
+import { createSessionStore } from "./store";
 
-export class GameError extends Error {
-  constructor(
-    public code: string,
-    public status = 400,
-  ) {
-    super(code);
-  }
-}
+export { GameError };
 
-const GRACE_MS = 30 * 60_000;
-const IS_DEV = process.env.NODE_ENV !== "production";
+const store = createSessionStore<Session, CategorySlug>("oronmask-sessions.json", (s) => s.category);
+const getSession = store.get;
+const saveSession = store.save;
+const listSessions = store.list;
+export const resetDay = store.resetDay;
 
-/** Vilket datum en förfrågan gäller. Utveckling: valfritt tidigare datum för test. */
-export function resolveDate(requested: string | null | undefined, now = new Date()): { date: string; today: string } {
-  const today = stockholmDate(now);
-  if (!requested || requested === today) return { date: today, today };
-  if (IS_DEV && requested >= GAME_START_DATE && requested < today) return { date: requested, today };
-  // Spela klart gårdagens påbörjade spel strax efter midnatt.
-  const inGrace = requested === addDays(today, -1) && now.getTime() - startOfStockholmDay(today).getTime() < GRACE_MS;
-  if (inGrace) return { date: requested, today };
-  throw new GameError("DATE_NOT_ALLOWED", 403);
+export function resolveDate(requested: string | null | undefined, now = new Date()) {
+  return resolveDateFor(requested, GAME_START_DATE, now);
 }
 
 // ---------- Publik form (skickas till webbläsaren) ----------

@@ -1,8 +1,9 @@
 "use client";
 import { MAX_ATTEMPTS, STEPS, formatSeconds, moveEmoji, type Stats } from "@/game-engine/oronmask";
 import type { PublicSession } from "@/game-engine/oronmask-api-types";
-import { Countdown } from "./Countdown";
+import { Countdown } from "@/components/ui/Countdown";
 import type { PlayerStatus } from "./useClipPlayer";
+import u from "@/components/ui/ui.module.css";
 import s from "./oronmask.module.css";
 
 type Props = {
@@ -30,14 +31,14 @@ export function ResultSheet({ session, categoryName, number, stats, nextLabel, o
   const playing = preview.active && preview.status === "playing";
 
   return (
-    <div className={s.result}>
-      <p className={s.eyebrow}>
+    <div className={u.result}>
+      <p className={u.eyebrow}>
         Öronmask #{number} · {categoryName}
       </p>
-      <h2 className={`display ${s.resultTitle} ${won ? s.resultWon : s.resultLost}`}>
+      <h2 className={`display ${u.resultTitle} ${won ? u.resultWon : u.resultLost}`}>
         {won ? WIN_LINES[tries - 1] : "Den här gick dig förbi"}
       </h2>
-      <p className={s.resultSub}>
+      <p className={u.resultSub}>
         {won ? `Du kände igen den efter ${formatSeconds(STEPS[tries - 1])}.` : "Låten var:"}
       </p>
 
@@ -73,23 +74,23 @@ export function ResultSheet({ session, categoryName, number, stats, nextLabel, o
         </div>
       )}
 
-      <p className={s.emojiRow} aria-label="Dina försök">
+      <p className={u.emojiRow} aria-label="Dina försök">
         {Array.from({ length: MAX_ATTEMPTS }, (_, i) => moveEmoji(session.moves[i])).join(" ")}
       </p>
 
-      <div className={s.actions}>
-        <button type="button" className={s.btnGhost} onClick={onShare}>
+      <div className={u.actions}>
+        <button type="button" className={u.btnGhost} onClick={onShare}>
           Dela resultat
         </button>
         {nextLabel && (
-          <button type="button" className={s.btnPrimary} onClick={onNext}>
+          <button type="button" className={u.btnPrimary} onClick={onNext}>
             {nextLabel} →
           </button>
         )}
       </div>
 
-      <section className={s.stats} aria-label={`Din statistik för ${categoryName}`}>
-        <dl className={s.statGrid}>
+      <section className={u.stats} aria-label={`Din statistik för ${categoryName}`}>
+        <dl className={u.statGrid}>
           <div>
             <dt>Spelade</dt>
             <dd className="mono">{stats.played}</dd>
@@ -107,13 +108,13 @@ export function ResultSheet({ session, categoryName, number, stats, nextLabel, o
             <dd className="mono">{stats.bestStreak}</dd>
           </div>
         </dl>
-        <div className={s.dist}>
+        <div className={u.dist}>
           {stats.distribution.map((n, i) => (
-            <div key={i} className={s.distRow}>
+            <div key={i} className={u.distRow}>
               <span className="mono">{i === MAX_ATTEMPTS ? "✕" : i + 1}</span>
-              <span className={s.distTrack}>
+              <span className={u.distTrack}>
                 <span
-                  className={`${s.distBar} ${i === highlight ? (won ? s.distBarWon : s.distBarLost) : ""}`}
+                  className={`${u.distBar} ${i === highlight ? (won ? u.distBarWon : u.distBarLost) : ""}`}
                   style={{ width: `${Math.max(6, (n / maxDist) * 100)}%` }}
                 >
                   <span className="mono">{n}</span>
@@ -125,7 +126,7 @@ export function ResultSheet({ session, categoryName, number, stats, nextLabel, o
       </section>
 
       {!isArchive && (
-        <p className={s.next}>
+        <p className={u.next}>
           Nya låtar om <Countdown target={countdownTarget} />
         </p>
       )}

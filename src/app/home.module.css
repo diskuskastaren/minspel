@@ -164,3 +164,55 @@
     transform: translateY(10px);
   }
 }
+
+/* Ordet: ljust kort med bokstavsbrickor */
+.featureAlt {
+  margin-top: -16px;
+  background: var(--card);
+  color: var(--ink);
+  border: 1.5px solid var(--ink);
+  box-shadow: 0 4px 0 var(--ink);
+  animation-delay: 0.1s;
+}
+.featureAlt .kicker {
+  color: var(--good);
+}
+.featureTiles {
+  display: grid;
+  grid-template-columns: repeat(2, 38px);
+  gap: 5px;
+  width: 84px;
+  justify-content: center;
+}
+.featureTiles span {
+  display: grid;
+  place-items: center;
+  height: 38px;
+  border-radius: 8px;
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: #fff;
+  background: var(--ink-3);
+  transition: transform 0.4s var(--ease-out);
+}
+.featureTiles span:nth-child(1) {
+  background: var(--good);
+}
+.featureTiles span:nth-child(2) {
+  background: var(--half);
+}
+.featureTiles span:nth-child(3) {
+  grid-column: 1 / -1;
+  width: 38px;
+  justify-self: center;
+}
+.featureAlt:hover .featureTiles span {
+  transform: rotateX(360deg);
+}
+.featureAlt:hover .featureTiles span:nth-child(2) {
+  transition-delay: 0.08s;
+}
+.featureAlt:hover .featureTiles span:nth-child(3) {
+  transition-delay: 0.16s;
+}

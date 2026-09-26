@@ -1,8 +1,8 @@
 import { NextResponse, type NextRequest } from "next/server";
 import { getDeviceId } from "@/server/device";
-import { resetDay, resolveDate } from "@/server/oronmask-service";
+import { resetDay, resolveDate } from "@/server/ordet-service";
 
-// Endast lokal utveckling: nollställ dagens (eller valt datums) spel för den här enheten.
+// Endast lokal utveckling: nollställ dagens (eller valt datums) ord för den här enheten.
 export async function POST(req: NextRequest) {
   if (process.env.NODE_ENV === "production") return NextResponse.json({ code: "NOT_FOUND" }, { status: 404 });
   const { date } = resolveDate(req.nextUrl.searchParams.get("datum"));

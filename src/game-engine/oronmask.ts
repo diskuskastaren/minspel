@@ -2,6 +2,8 @@
 // används av klienten för visning (delningstext, tidssteg, statistik).
 import { normalizeText, normalizeTitle } from "../lib/normalize";
 import { daysBetween } from "../lib/time";
+import { seededShuffle } from "./random";
+import { computeStats as computeSharedStats, type Stats } from "./stats";
 
 export const GAME_START_DATE = "2026-09-01";
 
@@ -92,36 +94,6 @@ export function judgeGuess(answer: TrackInfo, guess: TrackInfo): GuessResult {
 
 // ---------- Dagligt schema ----------
 
-function hashString(s: string): number {
-  let h = 0x811c9dc5;
-  for (let i = 0; i < s.length; i++) {
-    h ^= s.charCodeAt(i);
-    h = Math.imul(h, 0x01000193);
-  }
-  return h >>> 0;
-}
-
-function mulberry32(seed: number) {
-  let a = seed;
-  return () => {
-    a = (a + 0x6d2b79f5) >>> 0;
-    let t = a;
-    t = Math.imul(t ^ (t >>> 15), t | 1);
-    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
-    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
-  };
-}
-
-function seededShuffle<T>(items: T[], seed: string): T[] {
-  const rand = mulberry32(hashString(seed));
-  const arr = [...items];
-  for (let i = arr.length - 1; i > 0; i--) {
-    const j = Math.floor(rand() * (i + 1));
-    [arr[i], arr[j]] = [arr[j], arr[i]];
-  }
-  return arr;
-}
-
 /**
  * Väljer dagens låt per kategori. Deterministiskt: samma katalog + datum ger
  * alltid samma låt. Varje kategori går igenom hela sin pool innan en låt
@@ -170,44 +142,11 @@ export function shareText(session: Pick<Session, "date" | "category" | "state" |
 
 // ---------- Personlig statistik ----------
 
-export type Stats = {
-  played: number;
-  won: number;
-  currentStreak: number;
-  bestStreak: number;
-  /** index 0–5 = vann på försök 1–6, index 6 = förlust */
-  distribution: number[];
-};
+export type { Stats };
 
 export function computeStats(sessions: Session[], category: CategorySlug, today: string): Stats {
-  const finished = sessions
+  const games = sessions
     .filter((s) => s.category === category && s.state !== "ongoing")
-    .sort((a, b) => a.date.localeCompare(b.date));
-  const distribution = Array(MAX_ATTEMPTS + 1).fill(0);
-  for (const s of finished) distribution[s.state === "won" ? s.moves.length - 1 : MAX_ATTEMPTS]++;
-
-  const wonDates = new Set(finished.filter((s) => s.state === "won").map((s) => s.date));
-  let best = 0;
-  let run = 0;
-  let prev: string | null = null;
-  for (const s of finished) {
-    if (s.state === "won") {
-      run = prev && daysBetween(prev, s.date) === 1 && wonDates.has(prev) ? run + 1 : 1;
-      best = Math.max(best, run);
-    } else run = 0;
-    prev = s.date;
-  }
-  // Aktuell streak: räknas bakåt från idag (eller igår om dagens inte är spelad än).
-  let current = 0;
-  let cursor = wonDates.has(today) ? today : shiftDate(today, -1);
-  while (wonDates.has(cursor)) {
-    current++;
-    cursor = shiftDate(cursor, -1);
-  }
-  return { played: finished.length, won: wonDates.size, currentStreak: current, bestStreak: best, distribution };
-}
-
-function shiftDate(date: string, days: number): string {
-  const t = Date.parse(`${date}T00:00:00Z`) + days * 86_400_000;
-  return new Date(t).toISOString().slice(0, 10);
+    .map((s) => ({ date: s.date, won: s.state === "won", attempts: s.moves.length }));
+  return computeSharedStats(games, MAX_ATTEMPTS, today);
 }

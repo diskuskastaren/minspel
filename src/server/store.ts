@@ -1,54 +1,67 @@
 import "server-only";
 import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from "node:fs";
 import path from "node:path";
-import type { CategorySlug, Session } from "@/game-engine/oronmask";
 
 // Enkel filbaserad lagring för lokal utveckling. Byts mot Postgres innan
-// sidan blir offentlig (samma funktionssignaturer).
-const DIR = path.join(process.cwd(), ".data");
-const FILE = path.join(DIR, "oronmask-sessions.json");
+// sidan blir offentlig (samma funktionssignaturer). En fil per spel.
 
-type StoredSession = Session & { deviceId: string };
-type DB = { sessions: Record<string, StoredSession> };
+type Keyed = { date: string };
+type Stored<S> = S & { deviceId: string };
 
-let db: DB | null = null;
+export type SessionStore<S extends Keyed, C extends string | number> = {
+  get(deviceId: string, date: string, category: C): S | null;
+  save(deviceId: string, session: S): void;
+  list(deviceId: string): S[];
+  /** Alla spelares sessioner för en utmaning (för dagens statistik). */
+  listForChallenge(date: string, category: C): S[];
+  /** Endast för utveckling: nollställ en enhets sessioner för ett datum. */
+  resetDay(deviceId: string, date: string): void;
+};
 
-function load(): DB {
-  if (db) return db;
-  db = existsSync(FILE) ? (JSON.parse(readFileSync(FILE, "utf8")) as DB) : { sessions: {} };
-  return db;
-}
+export function createSessionStore<S extends Keyed, C extends string | number>(
+  fileName: string,
+  categoryOf: (s: S) => C,
+): SessionStore<S, C> {
+  let db: { sessions: Record<string, Stored<S>> } | null = null;
+  const file = () => path.join(process.env.KLURIG_DATA_DIR ?? path.join(process.cwd(), ".data"), fileName);
 
-function persist() {
-  mkdirSync(DIR, { recursive: true });
-  const tmp = `${FILE}.tmp`;
-  writeFileSync(tmp, JSON.stringify(load()));
-  renameSync(tmp, FILE);
-}
+  const load = () => {
+    if (db) return db;
+    db = existsSync(file()) ? JSON.parse(readFileSync(file(), "utf8")) : { sessions: {} };
+    return db!;
+  };
+  const persist = () => {
+    mkdirSync(path.dirname(file()), { recursive: true });
+    const tmp = `${file()}.tmp`;
+    writeFileSync(tmp, JSON.stringify(load()));
+    renameSync(tmp, file());
+  };
+  const key = (deviceId: string, date: string, category: C) => `${deviceId}|${date}|${category}`;
+  const strip = ({ deviceId: _omit, ...s }: Stored<S>) => s as unknown as S;
 
-const key = (deviceId: string, date: string, category: CategorySlug) => `${deviceId}|${date}|${category}`;
-
-export function getSession(deviceId: string, date: string, category: CategorySlug): Session | null {
-  const s = load().sessions[key(deviceId, date, category)];
-  if (!s) return null;
-  const { deviceId: _omit, ...session } = s;
-  return session;
-}
-
-export function saveSession(deviceId: string, session: Session): void {
-  load().sessions[key(deviceId, session.date, session.category)] = { ...session, deviceId };
-  persist();
-}
-
-export function listSessions(deviceId: string): Session[] {
-  return Object.values(load().sessions)
-    .filter((s) => s.deviceId === deviceId)
-    .map(({ deviceId: _omit, ...s }) => s);
-}
-
-/** Endast för utveckling: nollställ en enhets sessioner för ett datum. */
-export function resetDay(deviceId: string, date: string): void {
-  const sessions = load().sessions;
-  for (const k of Object.keys(sessions)) if (k.startsWith(`${deviceId}|${date}|`)) delete sessions[k];
-  persist();
+  return {
+    get(deviceId, date, category) {
+      const s = load().sessions[key(deviceId, date, category)];
+      return s ? strip(s) : null;
+    },
+    save(deviceId, session) {
+      load().sessions[key(deviceId, session.date, categoryOf(session))] = { ...session, deviceId };
+      persist();
+    },
+    list(deviceId) {
+      return Object.values(load().sessions)
+        .filter((s) => s.deviceId === deviceId)
+        .map(strip);
+    },
+    listForChallenge(date, category) {
+      return Object.values(load().sessions)
+        .filter((s) => s.date === date && categoryOf(s) === category)
+        .map(strip);
+    },
+    resetDay(deviceId, date) {
+      const sessions = load().sessions;
+      for (const k of Object.keys(sessions)) if (k.startsWith(`${deviceId}|${date}|`)) delete sessions[k];
+      persist();
+    },
+  };
 }

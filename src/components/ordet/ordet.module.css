@@ -1,0 +1,449 @@
+/* ============ Sida ============ */
+.page {
+  position: relative;
+  max-width: 520px;
+  margin: 0 auto;
+  min-height: 100dvh;
+  padding: max(14px, env(safe-area-inset-top)) 16px calc(16px + env(safe-area-inset-bottom));
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  isolation: isolate;
+  overflow-x: clip;
+}
+
+/* Bokstavsbrickor i bakgrunden bakom rubriken */
+.page::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -40px;
+  right: -120px;
+  width: 300px;
+  height: 220px;
+  background:
+    conic-gradient(from 90deg at 2px 2px, transparent 25%, var(--line) 0) 0 0 / 44px 44px;
+  transform: rotate(-12deg);
+  opacity: 0.9;
+  mask-image: radial-gradient(ellipse at 60% 40%, #000 20%, transparent 70%);
+  pointer-events: none;
+}
+
+.headerButtons {
+  justify-self: end;
+  display: flex;
+  gap: 6px;
+}
+.gear {
+  display: grid;
+  place-items: center;
+}
+
+.lengthTabs {
+  grid-template-columns: repeat(6, 1fr);
+}
+.lengthTabs button {
+  font-size: 1rem;
+}
+.tabStarted {
+  background: transparent !important;
+  box-shadow: inset 0 0 0 1.5px currentColor;
+}
+
+/* ============ Spelplan ============ */
+.stage {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 0;
+  outline: none;
+}
+
+.board {
+  --gap: 6px;
+  /* Brickorna skalar efter både bredd (antal bokstäver) och höjd (sex rader). */
+  --tile: min(
+    62px,
+    calc((min(100vw, 520px) - 32px - (var(--len) - 1) * var(--gap)) / var(--len)),
+    calc((100dvh - 400px) / 6 - var(--gap))
+  );
+  display: grid;
+  gap: var(--gap);
+  perspective: 800px;
+}
+.boardSkeleton {
+  width: min(100%, 360px);
+  height: min(420px, calc(100dvh - 400px));
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(var(--len), var(--tile));
+  gap: var(--gap);
+}
+
+.tile {
+  --flip-bg: var(--card);
+  --flip-border: var(--ink-3);
+  display: grid;
+  place-items: center;
+  width: var(--tile);
+  height: var(--tile);
+  min-width: 26px;
+  min-height: 26px;
+  border-radius: 10px;
+  border: 2px solid var(--line-strong);
+  background: color-mix(in srgb, var(--card) 55%, transparent);
+  font-family: var(--font-display), Georgia, serif;
+  font-variation-settings: "SOFT" 60, "WONK" 0;
+  font-size: calc(var(--tile) * 0.52);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--ink);
+  text-transform: uppercase;
+  user-select: none;
+}
+.tileSmall {
+  --tile: 34px;
+  font-size: 1.05rem;
+  border-radius: 8px;
+}
+
+.tile_empty {
+  border-style: dashed;
+}
+.tile_filled {
+  border-color: var(--ink-3);
+  background: var(--card);
+}
+.tile_correct,
+.tile_present,
+.tile_absent {
+  border-color: transparent;
+  color: #fff;
+}
+.tile_correct {
+  background: var(--good);
+}
+.tile_present {
+  background: var(--half);
+}
+.tile_absent {
+  background: var(--ink-3);
+}
+@media (prefers-color-scheme: dark) {
+  .tile_absent {
+    background: var(--paper-3);
+    color: var(--ink-2);
+  }
+  .tile_present {
+    color: #1b1300;
+  }
+}
+
+.typed {
+  animation: typed 0.12s var(--ease-out);
+}
+@keyframes typed {
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/* Vändningen: brickan ser "ifylld" ut tills den har vänts halvvägs. */
+.reveal {
+  animation: flip 0.5s ease-in-out both;
+  animation-delay: calc(var(--i) * 300ms);
+}
+@keyframes flip {
+  0%,
+  49% {
+    background: var(--flip-bg);
+    border-color: var(--flip-border);
+    color: var(--ink);
+  }
+  0% {
+    transform: rotateX(0);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0);
+  }
+}
+
+.bounce {
+  animation: bounce 0.5s var(--ease-out) both;
+  animation-delay: calc(var(--i) * 90ms);
+}
+@keyframes bounce {
+  40% {
+    transform: translateY(-30%);
+  }
+  70% {
+    transform: translateY(4%);
+  }
+}
+
+.shake {
+  animation: shake 0.45s;
+}
+@keyframes shake {
+  15%,
+  55% {
+    transform: translateX(-7px);
+  }
+  35%,
+  75% {
+    transform: translateX(7px);
+  }
+  90% {
+    transform: translateX(-2px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .bounce,
+  .shake,
+  .typed {
+    animation: none;
+  }
+}
+
+.hardBadge {
+  margin: 0;
+  padding: 2px 10px;
+  border-radius: 99px;
+  border: 1px solid var(--line-strong);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+}
+
+/* ============ Tangentbord ============ */
+.keyboard {
+  display: grid;
+  gap: 6px;
+  user-select: none;
+}
+.keyRow {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+.key {
+  flex: 1 1 0;
+  min-width: 0;
+  height: 54px;
+  padding: 0;
+  border: 0;
+  border-radius: 9px;
+  background: var(--paper-3);
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 1.02rem;
+  box-shadow: 0 2px 0 var(--line-strong);
+  transition: background 0.2s, color 0.2s, transform 0.08s;
+}
+.key:active {
+  transform: translateY(2px);
+  box-shadow: none;
+}
+.key:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+.keyWide {
+  flex-grow: 1.6;
+  font-size: 0.8rem;
+  letter-spacing: 0.02em;
+}
+.keyWide span {
+  font-size: 1.2rem;
+}
+.key_correct,
+.key_present,
+.key_absent {
+  color: #fff;
+}
+.key_correct {
+  background: var(--good);
+}
+.key_present {
+  background: var(--half);
+}
+.key_absent {
+  background: var(--ink-3);
+  opacity: 0.55;
+}
+@media (prefers-color-scheme: dark) {
+  .key_absent {
+    background: var(--paper);
+    color: var(--ink-3);
+    opacity: 1;
+  }
+  .key_present {
+    color: #1b1300;
+  }
+}
+@media (min-width: 480px) {
+  .keyRow {
+    gap: 6px;
+  }
+  .key {
+    height: 58px;
+  }
+}
+
+/* ============ Klar ============ */
+.donePanel {
+  display: grid;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 18px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  text-align: center;
+}
+.donePanel p {
+  margin: 0;
+}
+.doneButtons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 8px;
+}
+
+/* ============ Resultat ============ */
+.answer {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
+.emojiGrid {
+  margin: 0;
+  white-space: pre;
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+}
+.segment {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px;
+  margin: 0 0 12px;
+  padding: 3px;
+  border-radius: 99px;
+  background: var(--paper-2);
+}
+.segment button {
+  height: 32px;
+  border: 0;
+  border-radius: 99px;
+  background: transparent;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--ink-2);
+}
+.segment .segmentActive {
+  background: var(--card);
+  color: var(--ink);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+.todayPanel {
+  display: grid;
+  gap: 10px;
+}
+.beaten {
+  margin: 0;
+  text-align: center;
+}
+.muted {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--ink-2);
+  text-align: center;
+}
+
+/* ============ Så spelar du ============ */
+.examples {
+  display: grid;
+  gap: 12px;
+  margin: 0 0 16px;
+  padding: 14px;
+  border-radius: 14px;
+  background: var(--paper);
+}
+.examples p {
+  margin: 6px 0 0;
+  font-size: 0.88rem;
+}
+.example {
+  display: flex;
+  gap: 4px;
+}
+
+/* ============ Inställningar ============ */
+.setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+.setting label {
+  display: grid;
+  gap: 2px;
+}
+.setting label span {
+  font-size: 0.85rem;
+  color: var(--ink-2);
+}
+.lock {
+  font-size: 0.85rem;
+}
+.switch {
+  appearance: none;
+  flex: none;
+  position: relative;
+  width: 48px;
+  height: 28px;
+  margin: 0;
+  border-radius: 99px;
+  background: var(--paper-3);
+  border: 1.5px solid var(--line-strong);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.switch::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: var(--card);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s var(--ease-out);
+}
+.switch:checked {
+  background: var(--good);
+  border-color: var(--good);
+}
+.switch:checked::after {
+  transform: translateX(20px);
+}
+.switch:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

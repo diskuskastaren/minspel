@@ -16,7 +16,7 @@
 2. **Spelfunktionerna först.** Konton/inloggning, synk, Plus/betalning, arkiv-betalvägg, annonser, profiler och egna utmaningar väntar tills spelen fungerar. Anonyma lokala sessioner räcker under utvecklingen.
 3. **Ordning:**
    1. **Öronmask (musikspelet)** – byggs först.
-   2. Övriga spel (Ordet, Aning, Mer eller mindre, Rättstavat) – väntar.
+   2. **Ordet** – byggt (fas 1a). Övriga spel (Aning, Mer eller mindre, Rättstavat) – väntar.
    3. **Vilse** (Street View) – parkerad för senare implementering.
    4. **Skalningsspel** – ny idé som produktägaren utvecklar själv. *Endast notering tills vidare, ingen specifikation.*
 4. **Musikkälla (verifierat 2026-09-23):**
@@ -25,6 +25,11 @@
    - **Deezer API** ger 30 s-klipp (`preview`-fält, ingen API-nyckel krävs för sök/läsning). Riktlinjerna tillåter 30 s-extrakt men förbjuder nedladdningsbar ljuddata. → **Används för lokal utveckling.** Kommersiella villkor ska granskas innan sidan blir offentlig.
 
 5. **Status 2026-09-23:** Öronmask är byggd och spelbar lokalt (se [README.md](README.md)). Avvikelser från §5.5/§15 i denna fas: enkel Next.js-app (inte monorepo) och fil-lagring istället för Postgres. Båda byts ut före publicering.
+6. **Status 2026-09-26:** Ordet (fas 1a, §16 uppgift 1.1–1.7) är byggt och spelbart lokalt. Avvikelser från §16:
+   - Ordkällor: SALDO och Språkbanken var inte nåbara från byggmiljön. Gissningslistan kommer i stället från DSSO (Hunspell, via npm `dictionary-sv`) och svaren från Kelly-listan (via GitHub-spegeln `codesue/kelly`). Målen i 1.2 nås (≥ 150/300 svar per längd, ≈ 126 000 gissningsformer).
+   - Schema (1.3) och dagsstatistik (1.6) ligger i filer och räknas vid anrop, inte i Postgres/cron.
+   - Klientcachen (1.7) använder localStorage i stället för IndexedDB.
+   - Hårdkodade svenska strängar i komponenterna (ingen `messages/sv.json` ännu).
 
 ---
 

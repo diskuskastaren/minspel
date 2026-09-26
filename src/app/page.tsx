@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { OronmaskProgress } from "@/components/home/OronmaskProgress";
+import { OrdetProgress } from "@/components/home/OrdetProgress";
 import s from "./home.module.css";
 
 const UPCOMING = [
-  { name: "Ordet", blurb: "Gissa dagens ord – tre till åtta bokstäver.", tag: "Kommer snart" },
   { name: "Aning", blurb: "Hitta ordet genom betydelse. Varmt eller kallt?", tag: "Kommer snart" },
   { name: "Mer eller mindre", blurb: "Vad är störst? Sverige i siffror.", tag: "Kommer snart" },
   { name: "Rättstavat", blurb: "Hör ordet. Stava det rätt.", tag: "Kommer snart" },
@@ -33,6 +33,23 @@ export default function Home() {
           <span className={`display ${s.featureTitle}`}>Öronmask</span>
           <span className={s.featureBlurb}>Känner du igen låten på en halv sekund?</span>
           <OronmaskProgress />
+        </span>
+        <span className={s.featureArrow} aria-hidden="true">
+          →
+        </span>
+      </Link>
+
+      <Link href="/ordet" className={`${s.feature} ${s.featureAlt}`}>
+        <span className={s.featureTiles} aria-hidden="true">
+          <span>O</span>
+          <span>R</span>
+          <span>D</span>
+        </span>
+        <span className={s.featureBody}>
+          <span className={s.kicker}>Dagens ord</span>
+          <span className={`display ${s.featureTitle}`}>Ordet</span>
+          <span className={s.featureBlurb}>Sex ord, tre till åtta bokstäver. Sex försök per ord.</span>
+          <OrdetProgress />
         </span>
         <span className={s.featureArrow} aria-hidden="true">
           →

@@ -10,7 +10,10 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
-    "catalog": "node --experimental-strip-types scripts/build-catalog.ts"
+    "catalog": "node --experimental-strip-types scripts/build-catalog.ts",
+    "ordlista": "node --experimental-strip-types scripts/build-ordet-words.ts",
+    "ordet:schema": "node --experimental-strip-types scripts/schedule-ordet.ts",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "next": "^16.3.6",
@@ -19,9 +22,11 @@
     "server-only": "^0.0.1"
   },
   "devDependencies": {
+    "@playwright/test": "^1.56.1",
     "@types/node": "^26.6.2",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "dictionary-sv": "^4.0.0",
     "typescript": "^7.0.2",
     "vitest": "^5.0.1"
   }

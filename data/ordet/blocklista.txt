@@ -1,0 +1,75 @@
+# Ord som aldrig blir dagens svar i Ordet (de går fortfarande att gissa).
+# En rad per ord. Kör `npm run ordlista` efter ändring.
+# DSSO:s "föreslå inte"-märkning (svordomar, slurar) filtreras redan automatiskt.
+
+# Förkortningar
+sms
+dvd
+hiv
+
+# Svordomar, grovt och kroppsligt
+fan
+skit
+skita
+idiot
+rumpa
+djävul
+
+# Våld, död och brott
+död
+döda
+mord
+mörda
+mördare
+våld
+våldta
+våldtäkt
+folkmord
+avrätta
+tortyr
+bomb
+dödsfall
+pedofil
+abort
+cancer
+sex
+sexuell
+
+# Folkgrupper och religiösa identiteter (kan användas nedsättande)
+jude
+judisk
+judendom
+arab
+ryss
+grek
+turk
+serb
+kurd
+same
+kines
+britt
+japan
+indian
+slav
+muslim
+muslimsk
+islam
+islamisk
+islamist
+kristen
+katolik
+katolsk
+ateist
+gud
+israel
+taliban
+
+# Politiskt laddat
+nazist
+nazism
+fascism
+rasism
+rasist
+marxism
+rödgrön
+hat
