@@ -1,0 +1,247 @@
+/* ============ Sidhuvud ============ */
+.headerLeft {
+  justify-self: start;
+}
+.menuBtn {
+  display: grid;
+  place-items: center;
+}
+.headerButtons {
+  justify-self: end;
+  display: flex;
+  gap: 6px;
+}
+.iconCenter {
+  display: grid;
+  place-items: center;
+}
+
+/* ============ Meny ============ */
+.menu {
+  display: grid;
+  gap: 16px;
+}
+.menuLogo {
+  justify-self: start;
+  font-size: 2.2rem;
+  font-weight: 900;
+  font-style: italic;
+  text-decoration: none;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+.menuLogo span {
+  color: var(--saffron);
+}
+.menuHeading {
+  margin: 4px 0 -8px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.menuGames {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menuGame {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  text-decoration: none;
+}
+.menuGame:hover,
+.menuGame[aria-current="page"] {
+  border-color: var(--ink);
+}
+.menuGameText {
+  display: grid;
+}
+.menuGameText strong {
+  font-size: 1.15rem;
+  font-style: italic;
+}
+.menuGameText span {
+  font-size: 0.8rem;
+  color: var(--ink-2);
+}
+.menuSkeleton {
+  height: 180px;
+  border-radius: 14px;
+  background: var(--paper-2);
+}
+.menuCountdown {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--ink-2);
+}
+.menuLinks {
+  display: grid;
+  gap: 2px;
+  margin: 0;
+  padding: 12px 0 0;
+  border-top: 1px dashed var(--line-strong);
+  list-style: none;
+}
+.menuLinks a,
+.menuLinks button {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  border: 0;
+  background: none;
+  text-align: left;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--ink-2);
+}
+.menuLinks a:hover,
+.menuLinks button:hover {
+  color: var(--ink);
+}
+
+/* ============ Ring ============ */
+.ring {
+  flex: none;
+}
+.ringTrack {
+  fill: none;
+  stroke: var(--paper-3);
+  stroke-width: 4;
+}
+.ringValue,
+.ringDone {
+  fill: none;
+  stroke-width: 4;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.6s var(--ease-out);
+}
+.ringValue {
+  stroke: var(--half);
+}
+.ringDone {
+  stroke: var(--good);
+}
+.ringCheck {
+  fill: none;
+  stroke: var(--good);
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ============ Veckoremsa ============ */
+.week {
+  display: grid;
+  gap: 8px;
+}
+.weekDays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.weekDay {
+  display: grid;
+  justify-items: center;
+  gap: 3px;
+}
+.weekDot {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px dashed var(--line-strong);
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: #fff;
+}
+.weekPlayed .weekDot {
+  border: 0;
+  background: var(--good);
+}
+.weekToday .weekDot {
+  box-shadow: 0 0 0 2px var(--paper), 0 0 0 3.5px var(--ink);
+}
+.weekLabel {
+  font-size: 0.66rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+}
+.streak {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0;
+  font-size: 0.88rem;
+}
+.streakNum {
+  font-weight: 700;
+}
+.streakBest {
+  color: var(--ink-3);
+  font-size: 0.8rem;
+}
+
+/* ============ Feedback ============ */
+.feedback,
+.feedbackDone {
+  display: grid;
+  gap: 12px;
+}
+.feedback h2,
+.feedbackDone h2,
+.feedback p,
+.feedbackDone p {
+  margin: 0;
+}
+.feedbackField {
+  display: grid;
+  gap: 4px;
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+.feedbackField textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1.5px solid var(--line-strong);
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 400;
+  resize: vertical;
+}
+.feedbackField textarea:focus {
+  outline: 2.5px solid var(--saffron);
+  border-color: transparent;
+}
+.feedbackCount {
+  justify-self: end;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: var(--ink-3);
+}
+.feedbackNote {
+  font-size: 0.8rem;
+  color: var(--ink-3);
+}
+.feedbackError {
+  color: var(--bad);
+  font-weight: 600;
+  font-size: 0.88rem;
+}

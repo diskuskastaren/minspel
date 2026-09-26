@@ -10,9 +10,11 @@ type Props = {
   /** Vart fokus ska gå när modalen stängs (t.ex. sökfältet) – inte knappen som öppnade den. */
   returnFocus?: () => void;
   wide?: boolean;
+  /** "drawer" = sidomeny som glider in från vänster. */
+  variant?: "center" | "drawer";
 };
 
-export function Modal({ open, onClose, title, children, returnFocus, wide }: Props) {
+export function Modal({ open, onClose, title, children, returnFocus, wide, variant = "center" }: Props) {
   const ref = useRef<HTMLDialogElement>(null);
   const closeRef = useRef(onClose);
   const focusRef = useRef(returnFocus);
@@ -41,7 +43,7 @@ export function Modal({ open, onClose, title, children, returnFocus, wide }: Pro
   return (
     <dialog
       ref={ref}
-      className={`${s.modal} ${wide ? s.modalWide : ""}`}
+      className={`${s.modal} ${wide ? s.modalWide : ""} ${variant === "drawer" ? s.drawer : ""}`}
       aria-label={title}
       onClick={(e) => {
         if (e.target === ref.current) ref.current?.close();

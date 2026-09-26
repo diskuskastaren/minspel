@@ -1,13 +1,16 @@
 "use client";
-import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { ROUNDS, isCorrect, shareText } from "@/game-engine/rattstavat";
 import type { AudioKind, GameState } from "@/game-engine/rattstavat-api-types";
 import { normalizeKey } from "@/lib/normalize-word";
 import { Keyboard } from "@/components/ui/Keyboard";
+import { DateLine } from "@/components/hub/DateLine";
+import { GameHeader } from "@/components/hub/GameHeader";
+import { HowToPlayFooter, useHowToPlay } from "@/components/ui/HowToPlay";
 import { Modal } from "@/components/ui/Modal";
 import { ToastRegion, useToast } from "@/components/ui/Toast";
+import { playSfx } from "@/components/ui/sound";
 import u from "@/components/ui/ui.module.css";
 import { ApiError, api, errorText } from "./api";
 import { Diff, RevealTiles, revealLength } from "./Answer";
@@ -16,8 +19,6 @@ import { Summary } from "./Summary";
 import { useSpeaker } from "./useSpeaker";
 import s from "./rattstavat.module.css";
 
-const HTP_KEY = "klurig:rattstavat:htp";
-const HTP_EVERY_MS = 15 * 86_400_000;
 const IS_DEV = process.env.NODE_ENV !== "production";
 /** Avslöjandet visar en bokstav i taget. */
 const REVEAL_MS = 350;
@@ -25,12 +26,6 @@ const MAX_LEN = 40;
 const LEVEL_NAMES = ["", "Vardagsord", "Kluriga ljud", "Vanliga fällor", "Lånord", "Mästarnivå"];
 
 type Panel = "definition" | "mening" | "ursprung";
-
-function formatLongDate(date: string) {
-  return new Intl.DateTimeFormat("sv-SE", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" }).format(
-    new Date(`${date}T12:00:00Z`),
-  );
-}
 
 function SpeakerIcon() {
   return (
@@ -55,7 +50,9 @@ export function RattstavatGame() {
   const [panels, setPanels] = useState<Record<number, Partial<Record<Panel, true>>>>({});
   const [practice, setPractice] = useState<number | null>(null);
   const [shakeKey, setShakeKey] = useState(0);
-  const [showHelp, setShowHelp] = useState(false);
+  const htp = useHowToPlay("rattstavat");
+  const showHelp = htp.open;
+  const setShowHelp = htp.setOpen;
   const [showResult, setShowResult] = useState(false);
   const [announce, setAnnounce] = useState("");
   const [countdownTarget, setCountdownTarget] = useState(0);
@@ -79,19 +76,6 @@ export function RattstavatGame() {
     void load();
   }, [load]);
 
-  // "Så spelar du" första gången och sedan var 15:e dag.
-  useEffect(() => {
-    try {
-      const last = Number(localStorage.getItem(HTP_KEY) ?? 0);
-      if (Date.now() - last > HTP_EVERY_MS) {
-        setShowHelp(true);
-        localStorage.setItem(HTP_KEY, String(Date.now()));
-      }
-    } catch {
-      /* privat läge – visa inte automatiskt */
-    }
-  }, []);
-
   const playDate = datum ?? data?.date ?? null;
   const finished = data?.state === "finished";
   const index = data ? Math.min(view ?? data.current, ROUNDS - 1) : 0;
@@ -110,12 +94,16 @@ export function RattstavatGame() {
     if (!res) return;
     const total = revealLength(res);
     if (reveal.shown < total) {
-      const t = setTimeout(() => setReveal((r) => r && { ...r, shown: r.shown + 1 }), REVEAL_MS);
+      const t = setTimeout(() => {
+        playSfx("flip");
+        setReveal((r) => r && { ...r, shown: r.shown + 1 });
+      }, REVEAL_MS);
       return () => clearTimeout(t);
     }
     const t = setTimeout(() => {
       setReveal(null);
       setAnnounce(res.correct ? `Rätt! ${res.word.toUpperCase()}` : `Fel. Rätt stavning är ${res.word.toUpperCase()}`);
+      playSfx(res.correct ? "correct" : "wrong");
       notify(res.correct ? "Snyggt!" : "Nära – men inte riktigt", res.correct ? "good" : "bad");
       if (data.state === "finished") setTimeout(() => setShowResult(true), 1200);
     }, 250);
@@ -166,16 +154,19 @@ export function RattstavatGame() {
     if (!data || pending) return;
     const text = draft.trim();
     if (!text) {
+      playSfx("invalid");
       setShakeKey((k) => k + 1);
       notify("Skriv ordet först", "bad");
       return;
     }
     if (practicing && result) {
       if (isCorrect(text, { ord: result.word })) {
+        playSfx("correct");
         notify("Rätt! Nu sitter det.", "good");
         setPractice(null);
         setDraft("");
       } else {
+        playSfx("invalid");
         setShakeKey((k) => k + 1);
         notify("Inte riktigt – lyssna och försök igen.", "bad");
       }
@@ -205,7 +196,10 @@ export function RattstavatGame() {
       if (key === "Enter") return void submit();
       if (key === "Backspace") return setDraft((d) => [...d].slice(0, -1).join(""));
       const ch = normalizeKey(key);
-      if (ch) setDraft((d) => ([...d].length < MAX_LEN ? d + ch : d));
+      if (ch) {
+        playSfx("tap");
+        setDraft((d) => ([...d].length < MAX_LEN ? d + ch : d));
+      }
     },
     [typing, pending, submit],
   );
@@ -293,27 +287,14 @@ export function RattstavatGame() {
 
   return (
     <main className={s.page}>
-      <header className={u.header}>
-        <Link href="/" className={u.back} aria-label="Till Klurig startsida">
-          <span aria-hidden="true">←</span> Klurig
-        </Link>
-        <div className={u.brand}>
-          <h1 className={`display ${u.title} ${s.title}`}>Rättstavat</h1>
-          <p className={u.subtitle}>
-            {data ? (
-              <>
-                <span className="mono">#{data.number}</span> · {formatLongDate(data.date)}
-                {data.isArchive && <span className={u.archiveTag}>arkiv</span>}
-              </>
-            ) : (
-              " "
-            )}
-          </p>
-        </div>
-        <button type="button" className={`${u.iconBtn} ${s.helpBtn}`} onClick={() => setShowHelp(true)} aria-label="Så spelar du">
-          ?
-        </button>
-      </header>
+      <GameHeader
+        title="Rättstavat"
+        current="rattstavat"
+        onHelp={() => setShowHelp(true)}
+        returnFocus={() => stageRef.current?.focus()}
+        titleClassName={s.title}
+        subtitle={<DateLine data={data} />}
+      />
 
       <nav className={s.dots} aria-label="Dagens ord">
         {(data?.rounds ?? Array.from({ length: ROUNDS }, () => null)).map((r, i) => {
@@ -493,9 +474,7 @@ export function RattstavatGame() {
 
       <Modal open={showHelp} onClose={() => setShowHelp(false)} title="Så spelar du" returnFocus={() => stageRef.current?.focus()}>
         <HowToPlay />
-        <button type="button" className={`${u.btnPrimary} ${u.htpGo}`} onClick={() => setShowHelp(false)}>
-          Nu kör vi
-        </button>
+        <HowToPlayFooter never={htp.never} onNever={htp.setNever} onClose={() => setShowHelp(false)} />
       </Modal>
 
       {data && finished && (

@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { STEPS, MAX_ATTEMPTS, formatSeconds, isCategory, shareText, type CategorySlug } from "@/game-engine/oronmask";
@@ -7,26 +6,22 @@ import type { GameState, SearchHit } from "@/game-engine/oronmask-api-types";
 import { ApiError, api, errorText } from "./api";
 import { Board } from "./Board";
 import { HowToPlay } from "./HowToPlay";
+import { DateLine } from "@/components/hub/DateLine";
+import { GameHeader } from "@/components/hub/GameHeader";
+import { HowToPlayFooter, useHowToPlay } from "@/components/ui/HowToPlay";
 import { Modal } from "@/components/ui/Modal";
 import { ResultSheet } from "./ResultSheet";
 import { SearchBox, type SearchBoxHandle } from "./SearchBox";
 import { Timeline } from "./Timeline";
 import { Vinyl } from "./Vinyl";
 import { useClipPlayer } from "./useClipPlayer";
+import { playSfx } from "@/components/ui/sound";
 import u from "@/components/ui/ui.module.css";
 import s from "./oronmask.module.css";
 
-const HTP_KEY = "klurig:oronmask:htp";
-const HTP_EVERY_MS = 15 * 86_400_000;
 const IS_DEV = process.env.NODE_ENV !== "production";
 
 type Toast = { id: number; text: string; tone: "info" | "good" | "half" | "bad" };
-
-function formatLongDate(date: string) {
-  return new Intl.DateTimeFormat("sv-SE", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" }).format(
-    new Date(`${date}T12:00:00Z`),
-  );
-}
 
 export function OronmaskGame() {
   const router = useRouter();
@@ -41,7 +36,9 @@ export function OronmaskGame() {
   const [selected, setSelected] = useState<SearchHit | null>(null);
   const [pending, setPending] = useState(false);
   const [showResult, setShowResult] = useState(false);
-  const [showHelp, setShowHelp] = useState(false);
+  const htp = useHowToPlay("oronmask");
+  const showHelp = htp.open;
+  const setShowHelp = htp.setOpen;
   const [toast, setToast] = useState<Toast | null>(null);
   const [countdownTarget, setCountdownTarget] = useState(0);
   const searchRef = useRef<SearchBoxHandle>(null);
@@ -76,19 +73,6 @@ export function OronmaskGame() {
 
   // Datumet som faktiskt spelas (kan vara gårdagens strax efter midnatt).
   const playDate = datum ?? data?.date ?? null;
-
-  // "Så spelar du" första gången och sedan var 15:e dag.
-  useEffect(() => {
-    try {
-      const last = Number(localStorage.getItem(HTP_KEY) ?? 0);
-      if (Date.now() - last > HTP_EVERY_MS) {
-        setShowHelp(true);
-        localStorage.setItem(HTP_KEY, String(Date.now()));
-      }
-    } catch {
-      /* privat läge – visa inte automatiskt */
-    }
-  }, []);
 
   const current = useMemo(() => data?.categories.find((c) => c.slug === cat) ?? null, [data, cat]);
   const session = current?.session ?? null;
@@ -160,8 +144,10 @@ export function OronmaskGame() {
         setSelected(null);
         const last = res.session.moves[res.session.moves.length - 1];
         if (res.session.state !== "ongoing") {
+          playSfx(res.session.state === "won" ? "win" : "lose");
           setTimeout(() => setShowResult(true), 900);
         } else {
+          if (last?.kind === "guess") playSfx("wrong");
           if (last?.kind === "guess") notify(last.result === "artist" ? "Rätt artist – men fel låt!" : "Inte den här.", last.result === "artist" ? "half" : "bad");
           const n = res.session.moves.length;
           // Spela direkt upp det längre klippet (användaren har precis klickat, så autoplay tillåts).
@@ -231,27 +217,13 @@ export function OronmaskGame() {
 
   return (
     <main className={s.page}>
-      <header className={u.header}>
-        <Link href="/" className={u.back} aria-label="Till Klurig startsida">
-          <span aria-hidden="true">←</span> Klurig
-        </Link>
-        <div className={u.brand}>
-          <h1 className={`display ${u.title}`}>Öronmask</h1>
-          <p className={u.subtitle}>
-            {data ? (
-              <>
-                <span className="mono">#{data.number}</span> · {formatLongDate(data.date)}
-                {data.isArchive && <span className={u.archiveTag}>arkiv</span>}
-              </>
-            ) : (
-              " "
-            )}
-          </p>
-        </div>
-        <button type="button" className={u.iconBtn} onClick={() => setShowHelp(true)} aria-label="Så spelar du">
-          ?
-        </button>
-      </header>
+      <GameHeader
+        title="Öronmask"
+        current="oronmask"
+        onHelp={() => setShowHelp(true)}
+        returnFocus={() => searchRef.current?.focus()}
+        subtitle={<DateLine data={data} />}
+      />
 
       <nav className={u.tabs} aria-label="Kategorier">
         {(data?.categories ?? []).map((c) => {
@@ -341,9 +313,7 @@ export function OronmaskGame() {
 
       <Modal open={showHelp} onClose={() => setShowHelp(false)} title="Så spelar du" returnFocus={() => searchRef.current?.focus()}>
         <HowToPlay />
-        <button type="button" className={`${u.btnPrimary} ${u.htpGo}`} onClick={() => setShowHelp(false)}>
-          Jag är redo
-        </button>
+        <HowToPlayFooter never={htp.never} onNever={htp.setNever} onClose={() => setShowHelp(false)} />
       </Modal>
 
       {session && current && data && finished && (

@@ -31,10 +31,6 @@
 .title {
   font-size: clamp(2rem, 8vw, 2.7rem);
 }
-.helpBtn {
-  align-self: center;
-}
-
 /* ============ Rundor ============ */
 .dots {
   display: flex;
@@ -327,13 +323,11 @@
   color: var(--ink-2);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .tile,
-  .card,
-  .verdict,
-  .speaking svg path {
-    animation: none;
-  }
+:global([data-motion="reduce"]) .tile,
+:global([data-motion="reduce"]) .card,
+:global([data-motion="reduce"]) .verdict,
+:global([data-motion="reduce"]) .speaking svg path {
+  animation: none;
 }
 
 /* ============ Inmatning ============ */
@@ -462,9 +456,4 @@
   font-size: 0.78rem;
   color: var(--ink-2);
   white-space: nowrap;
-}
-.linkBtn {
-  display: grid;
-  place-items: center;
-  text-decoration: none;
 }

@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import {
@@ -16,8 +15,12 @@ import type { GameState, LengthState } from "@/game-engine/ordet-api-types";
 import { normalizeKey } from "@/lib/normalize-word";
 import { stockholmDate } from "@/lib/time";
 import { Keyboard } from "@/components/ui/Keyboard";
+import { DateLine } from "@/components/hub/DateLine";
+import { GameHeader } from "@/components/hub/GameHeader";
+import { HowToPlayFooter, useHowToPlay } from "@/components/ui/HowToPlay";
 import { Modal } from "@/components/ui/Modal";
 import { ToastRegion, useToast } from "@/components/ui/Toast";
+import { playSfx } from "@/components/ui/sound";
 import { useColorblind, useFlag } from "@/components/ui/preferences";
 import u from "@/components/ui/ui.module.css";
 import { ApiError, api, errorText } from "./api";
@@ -27,19 +30,11 @@ import { ResultSheet, WIN_LINES } from "./ResultSheet";
 import { Settings } from "./Settings";
 import s from "./ordet.module.css";
 
-const HTP_KEY = "klurig:ordet:htp";
-const HTP_EVERY_MS = 15 * 86_400_000;
 const CACHE_KEY = "klurig:ordet:cache";
 const IS_DEV = process.env.NODE_ENV !== "production";
 /** Rutorna vänds en i taget. */
 const FLIP_STAGGER_MS = 300;
 const FLIP_MS = 500;
-
-function formatLongDate(date: string) {
-  return new Intl.DateTimeFormat("sv-SE", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" }).format(
-    new Date(`${date}T12:00:00Z`),
-  );
-}
 
 function readCache(date: string): GameState | null {
   try {
@@ -82,13 +77,14 @@ export function OrdetGame() {
   const [bounce, setBounce] = useState<{ len: WordLength; row: number } | null>(null);
   const [shakeKey, setShakeKey] = useState(0);
   const [showResult, setShowResult] = useState(false);
-  const [showHelp, setShowHelp] = useState(false);
-  const [showSettings, setShowSettings] = useState(false);
+  const htp = useHowToPlay("ordet");
+  const showHelp = htp.open;
+  const setShowHelp = htp.setOpen;
   const { toast, notify } = useToast();
   const [announce, setAnnounce] = useState("");
   const [countdownTarget, setCountdownTarget] = useState(0);
   const [hardPref, setHardPref] = useFlag("klurig:ordet:svart");
-  const [colorblind, setColorblind] = useColorblind();
+  const [colorblind] = useColorblind();
   const boardRef = useRef<HTMLDivElement>(null);
   const timers = useRef<ReturnType<typeof setTimeout>[]>([]);
 
@@ -96,7 +92,6 @@ export function OrdetGame() {
     timers.current.push(setTimeout(fn, ms));
   }, []);
   useEffect(() => () => timers.current.forEach(clearTimeout), []);
-
 
   const applyState = useCallback(
     (st: GameState) => {
@@ -127,19 +122,6 @@ export function OrdetGame() {
     void load();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [load]);
-
-  // "Så spelar du" första gången och sedan var 15:e dag.
-  useEffect(() => {
-    try {
-      const last = Number(localStorage.getItem(HTP_KEY) ?? 0);
-      if (Date.now() - last > HTP_EVERY_MS) {
-        setShowHelp(true);
-        localStorage.setItem(HTP_KEY, String(Date.now()));
-      }
-    } catch {
-      /* privat läge – visa inte automatiskt */
-    }
-  }, []);
 
   const current: LengthState | null = useMemo(() => data?.lengths.find((l) => l.length === len) ?? null, [data, len]);
   const session = current?.session ?? null;
@@ -182,6 +164,7 @@ export function OrdetGame() {
 
   const shake = useCallback(
     (text: string) => {
+      playSfx("invalid");
       setShakeKey((k) => k + 1);
       notify(text, "bad");
     },
@@ -214,15 +197,18 @@ export function OrdetGame() {
       });
       setDraft(len, () => "");
       setReveal({ len, row: rowIdx });
+      for (let i = 0; i < len; i++) later(() => playSfx("flip"), i * FLIP_STAGGER_MS + FLIP_MS / 2);
       const revealMs = (len - 1) * FLIP_STAGGER_MS + FLIP_MS;
       later(() => {
         setReveal(null);
         setAnnounce(describeRow(next.rows[rowIdx]));
         if (next.state === "won") {
           setBounce({ len, row: rowIdx });
+          playSfx("win");
           notify(WIN_LINES[rowIdx], "good");
           later(() => setShowResult(true), 1300);
         } else if (next.state === "lost") {
+          playSfx("lose");
           notify(`Nära skjuter ingen hare – ordet var ${next.answer?.toUpperCase()}`, "bad", 4000);
           later(() => setShowResult(true), 1800);
         }
@@ -245,7 +231,10 @@ export function OrdetGame() {
       if (key === "Enter") return void submit();
       if (key === "Backspace") return setDraft(len, (d) => [...d].slice(0, -1).join(""));
       const ch = normalizeKey(key);
-      if (ch && !pending) setDraft(len, (d) => ([...d].length < len ? d + ch : d));
+      if (ch && !pending) {
+        playSfx("tap");
+        setDraft(len, (d) => ([...d].length < len ? d + ch : d));
+      }
     },
     [len, ongoing, revealing, pending, submit, setDraft],
   );
@@ -321,35 +310,14 @@ export function OrdetGame() {
 
   return (
     <main className={s.page}>
-      <header className={u.header}>
-        <Link href="/" className={u.back} aria-label="Till Klurig startsida">
-          <span aria-hidden="true">←</span> Klurig
-        </Link>
-        <div className={u.brand}>
-          <h1 className={`display ${u.title}`}>Ordet</h1>
-          <p className={u.subtitle}>
-            {data ? (
-              <>
-                <span className="mono">#{data.number}</span> · {formatLongDate(data.date)}
-                {data.isArchive && <span className={u.archiveTag}>arkiv</span>}
-              </>
-            ) : (
-              " "
-            )}
-          </p>
-        </div>
-        <div className={s.headerButtons}>
-          <button type="button" className={u.iconBtn} onClick={() => setShowHelp(true)} aria-label="Så spelar du">
-            ?
-          </button>
-          <button type="button" className={`${u.iconBtn} ${s.gear}`} onClick={() => setShowSettings(true)} aria-label="Inställningar">
-            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" fill="none" stroke="currentColor">
-              <circle cx="12" cy="12" r="8.2" strokeWidth="3.2" strokeDasharray="3.22 3.22" />
-              <circle cx="12" cy="12" r="5.6" strokeWidth="2.4" />
-            </svg>
-          </button>
-        </div>
-      </header>
+      <GameHeader
+        title="Ordet"
+        current="ordet"
+        onHelp={() => setShowHelp(true)}
+        returnFocus={() => boardRef.current?.focus()}
+        settings={<Settings hard={ongoing && rows.length > 0 ? !!session?.hard : hardPref} onHard={setHardPref} hardLocked={ongoing && rows.length > 0} />}
+        subtitle={<DateLine data={data} />}
+      />
 
       <nav className={`${u.tabs} ${s.lengthTabs}`} aria-label="Antal bokstäver">
         {LENGTHS.map((l) => {
@@ -439,19 +407,7 @@ export function OrdetGame() {
 
       <Modal open={showHelp} onClose={() => setShowHelp(false)} title="Så spelar du" returnFocus={() => boardRef.current?.focus()}>
         <HowToPlay />
-        <button type="button" className={`${u.btnPrimary} ${u.htpGo}`} onClick={() => setShowHelp(false)}>
-          Nu kör vi
-        </button>
-      </Modal>
-
-      <Modal open={showSettings} onClose={() => setShowSettings(false)} title="Inställningar" returnFocus={() => boardRef.current?.focus()}>
-        <Settings
-          hard={ongoing && rows.length > 0 ? !!session?.hard : hardPref}
-          onHard={setHardPref}
-          hardLocked={ongoing && rows.length > 0}
-          colorblind={colorblind}
-          onColorblind={setColorblind}
-        />
+        <HowToPlayFooter never={htp.never} onNever={htp.setNever} onClose={() => setShowHelp(false)} />
       </Modal>
 
       {session && current && data && finished && (

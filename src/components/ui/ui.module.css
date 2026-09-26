@@ -533,16 +533,15 @@
   background: var(--ink-3);
   opacity: 0.55;
 }
-@media (prefers-color-scheme: dark) {
-  .key_absent {
-    background: var(--paper);
-    color: var(--ink-3);
-    opacity: 1;
-  }
-  .key_present {
-    color: #1b1300;
-  }
+:global([data-theme="dark"]) .key_absent {
+  background: var(--paper);
+  color: var(--ink-3);
+  opacity: 1;
 }
+:global([data-theme="dark"]) .key_present {
+  color: #1b1300;
+}
+
 @media (min-width: 480px) {
   .keyRow {
     gap: 6px;
@@ -550,4 +549,178 @@
   .key {
     height: 58px;
   }
+}
+
+/* ============ Inställningar ============ */
+.setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+.setting label {
+  display: grid;
+  gap: 2px;
+}
+.setting label span {
+  font-size: 0.85rem;
+  color: var(--ink-2);
+}
+.lock {
+  font-size: 0.85rem;
+}
+.switch {
+  appearance: none;
+  flex: none;
+  position: relative;
+  width: 48px;
+  height: 28px;
+  margin: 0;
+  border-radius: 99px;
+  background: var(--paper-3);
+  border: 1.5px solid var(--line-strong);
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.switch::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: var(--card);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s var(--ease-out);
+}
+.switch:checked {
+  background: var(--good);
+  border-color: var(--good);
+}
+.switch:checked::after {
+  transform: translateX(20px);
+}
+.switch:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+.choice {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+  padding: 3px;
+  border-radius: 99px;
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+}
+.choice label {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 32px;
+  border-radius: 99px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink-2);
+  cursor: pointer;
+}
+.choice input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.choice label:has(input:checked) {
+  background: var(--card);
+  color: var(--ink);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+.choice label:has(input:focus-visible) {
+  outline: 2.5px solid var(--saffron);
+}
+.settingStack {
+  display: grid;
+  gap: 8px;
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+}
+.settingStack > span {
+  display: grid;
+  gap: 2px;
+}
+.settingStack > span span {
+  font-size: 0.85rem;
+  color: var(--ink-2);
+}
+.volume {
+  width: 100%;
+  accent-color: var(--saffron);
+}
+.settingsGroup {
+  margin: 18px 0 0;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.fieldset {
+  margin: 0;
+  padding: 14px 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  min-inline-size: 0;
+}
+.fieldset legend {
+  padding: 0;
+}
+
+/* ============ Sidomeny (Modal variant="drawer") ============ */
+.drawer {
+  width: min(340px, calc(100vw - 48px));
+  height: 100dvh;
+  max-height: 100dvh;
+  margin: 0 auto 0 0;
+  border-radius: 0 24px 24px 0;
+  border-left: 0;
+}
+.drawer[open] {
+  animation: drawerIn 0.3s var(--ease-out);
+}
+.drawer .modalInner {
+  min-height: 100%;
+  padding: max(20px, env(safe-area-inset-top)) 20px calc(20px + env(safe-area-inset-bottom));
+}
+@keyframes drawerIn {
+  from {
+    transform: translateX(-100%);
+  }
+}
+
+.htpFooter {
+  display: grid;
+  gap: 10px;
+}
+.htpNever {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--ink-2);
+  cursor: pointer;
+}
+.htpNever input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--ink);
+}
+
+.linkBtn {
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+  text-align: center;
 }

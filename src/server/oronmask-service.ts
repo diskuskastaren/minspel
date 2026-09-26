@@ -16,6 +16,7 @@ import {
   type Stats,
 } from "@/game-engine/oronmask";
 import type { GameState, PublicSession, Reveal } from "@/game-engine/oronmask-api-types";
+import type { DaySummary } from "@/game-engine/hub";
 import { normalizeText } from "@/lib/normalize";
 import { msUntilNextDay } from "@/lib/time";
 import { sliceMp3 } from "@/lib/mp3";
@@ -147,4 +148,26 @@ export async function search(query: string): Promise<SearchHit[]> {
     if (out.length >= 10) break;
   }
   return out;
+}
+
+// ---------- Hubben ----------
+
+export function daySummary(deviceId: string, date: string): DaySummary {
+  const sessions = CATEGORIES.map((c) => getSession(deviceId, date, c.slug));
+  const finished = sessions.filter((s) => s && s.state !== "ongoing");
+  const won = finished.filter((s) => s!.state === "won").length;
+  return {
+    done: finished.length,
+    total: CATEGORIES.length,
+    started: sessions.some((s) => s && s.moves.length > 0),
+    finished: finished.length === CATEGORIES.length,
+    detail: finished.length ? `${won} av ${finished.length} rätt` : null,
+  };
+}
+
+/** Datum då spelaren klarade minst en låt. */
+export function finishedDates(deviceId: string): string[] {
+  return listSessions(deviceId)
+    .filter((s) => s.state !== "ongoing")
+    .map((s) => s.date);
 }

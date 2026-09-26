@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { MAX_GUESSES, percentileBeaten, rowEmoji, type DailyStats, type Stats } from "@/game-engine/ordet";
 import type { PublicSession } from "@/game-engine/ordet-api-types";
+import { NextGameButton } from "@/components/hub/NextGame";
 import { Countdown } from "@/components/ui/Countdown";
 import u from "@/components/ui/ui.module.css";
 import s from "./ordet.module.css";
@@ -78,10 +79,12 @@ export function ResultSheet({ session, number, stats, daily, colorblind, nextLab
         <button type="button" className={u.btnGhost} onClick={onShare}>
           Dela resultat
         </button>
-        {nextLabel && (
+        {nextLabel ? (
           <button type="button" className={u.btnPrimary} onClick={onNext}>
             {nextLabel} →
           </button>
+        ) : (
+          <NextGameButton current="ordet" />
         )}
       </div>
 

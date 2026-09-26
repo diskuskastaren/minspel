@@ -376,20 +376,18 @@
 .row_correct .rowTime {
   color: rgba(27, 35, 64, 0.6);
 }
-@media (prefers-color-scheme: dark) {
-  .row_wrong,
-  .row_artist,
-  .row_correct {
-    color: var(--ink);
-  }
-  .row_wrong .rowNum,
-  .row_artist .rowNum,
-  .row_correct .rowNum,
-  .row_wrong .rowTime,
-  .row_artist .rowTime,
-  .row_correct .rowTime {
-    color: var(--ink-2);
-  }
+:global([data-theme="dark"]) .row_wrong,
+:global([data-theme="dark"]) .row_artist,
+:global([data-theme="dark"]) .row_correct {
+  color: var(--ink);
+}
+:global([data-theme="dark"]) .row_wrong .rowNum,
+:global([data-theme="dark"]) .row_artist .rowNum,
+:global([data-theme="dark"]) .row_correct .rowNum,
+:global([data-theme="dark"]) .row_wrong .rowTime,
+:global([data-theme="dark"]) .row_artist .rowTime,
+:global([data-theme="dark"]) .row_correct .rowTime {
+  color: var(--ink-2);
 }
 
 @keyframes rowIn {
@@ -439,10 +437,8 @@
 .searchFieldSelected {
   background: var(--saffron-soft);
 }
-@media (prefers-color-scheme: dark) {
-  .searchFieldSelected {
-    background: var(--paper-3);
-  }
+:global([data-theme="dark"]) .searchFieldSelected {
+  background: var(--paper-3);
 }
 
 .searchIcon {

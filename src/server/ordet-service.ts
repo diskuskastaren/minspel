@@ -13,6 +13,7 @@ import {
   type WordLength,
 } from "@/game-engine/ordet";
 import type { GameState, GuessResponse, LengthState } from "@/game-engine/ordet-api-types";
+import type { DaySummary } from "@/game-engine/hub";
 import { normalizeWord } from "@/lib/normalize-word";
 import { msUntilNextDay } from "@/lib/time";
 import { resolveDate as resolveDateFor } from "./dates";
@@ -90,4 +91,27 @@ export function makeGuess(
   const next = applyGuess(session, word, answer, { hard });
   store.save(deviceId, next);
   return { length: toPublic(next), stats: statsFor(deviceId, input.length, today) };
+}
+
+// ---------- Hubben ----------
+
+export function daySummary(deviceId: string, date: string): DaySummary {
+  const sessions = LENGTHS.map((l) => store.get(deviceId, date, l));
+  const finished = sessions.filter((s) => s && s.state !== "ongoing");
+  const won = finished.filter((s) => s!.state === "won").length;
+  return {
+    done: finished.length,
+    total: LENGTHS.length,
+    started: sessions.some((s) => s && s.rows.length > 0),
+    finished: finished.length === LENGTHS.length,
+    detail: finished.length ? `${won} av ${finished.length} lösta` : null,
+  };
+}
+
+/** Datum då spelaren klarade minst ett ord. */
+export function finishedDates(deviceId: string): string[] {
+  return store
+    .list(deviceId)
+    .filter((s) => s.state !== "ongoing")
+    .map((s) => s.date);
 }

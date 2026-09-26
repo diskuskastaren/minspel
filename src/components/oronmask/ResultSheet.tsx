@@ -1,6 +1,7 @@
 "use client";
 import { MAX_ATTEMPTS, STEPS, formatSeconds, moveEmoji, type Stats } from "@/game-engine/oronmask";
 import type { PublicSession } from "@/game-engine/oronmask-api-types";
+import { NextGameButton } from "@/components/hub/NextGame";
 import { Countdown } from "@/components/ui/Countdown";
 import type { PlayerStatus } from "./useClipPlayer";
 import u from "@/components/ui/ui.module.css";
@@ -82,10 +83,12 @@ export function ResultSheet({ session, categoryName, number, stats, nextLabel, o
         <button type="button" className={u.btnGhost} onClick={onShare}>
           Dela resultat
         </button>
-        {nextLabel && (
+        {nextLabel ? (
           <button type="button" className={u.btnPrimary} onClick={onNext}>
             {nextLabel} →
           </button>
+        ) : (
+          <NextGameButton current="oronmask" />
         )}
       </div>
 

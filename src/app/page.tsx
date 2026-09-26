@@ -1,7 +1,6 @@
 import Link from "next/link";
-import { OronmaskProgress } from "@/components/home/OronmaskProgress";
-import { OrdetProgress } from "@/components/home/OrdetProgress";
-import { RattstavatProgress } from "@/components/home/RattstavatProgress";
+import { GameHeader } from "@/components/hub/GameHeader";
+import { CardStatus, Celebration, DaySummaryLine, Greeting, TodayProvider, WeekCard } from "@/components/home/Today";
 import s from "./home.module.css";
 
 const UPCOMING = [
@@ -11,20 +10,20 @@ const UPCOMING = [
   { name: "Skalningsspel", blurb: "En ny idé är på gång.", tag: "Idé" },
 ];
 
-function today() {
-  return new Intl.DateTimeFormat("sv-SE", { weekday: "long", day: "numeric", month: "long", timeZone: "Europe/Stockholm" }).format(new Date());
-}
-
 export default function Home() {
   return (
+    <TodayProvider>
     <main className={s.page}>
+      <GameHeader />
       <header className={s.header}>
-        <p className={s.date}>{today()}</p>
+        <Greeting />
         <h1 className={`display ${s.logo}`}>
           Klurig<span aria-hidden="true">.</span>
         </h1>
-        <p className={s.lede}>Dagens spel på svenska. Nya varje midnatt.</p>
+        <DaySummaryLine />
       </header>
+
+      <Celebration />
 
       <Link href="/oronmask" className={s.feature}>
         <span className={s.featureDisc} aria-hidden="true" />
@@ -32,7 +31,7 @@ export default function Home() {
           <span className={s.kicker}>Dagens låtar</span>
           <span className={`display ${s.featureTitle}`}>Öronmask</span>
           <span className={s.featureBlurb}>Känner du igen låten på en halv sekund?</span>
-          <OronmaskProgress />
+          <CardStatus slug="oronmask" />
         </span>
         <span className={s.featureArrow} aria-hidden="true">
           →
@@ -49,7 +48,7 @@ export default function Home() {
           <span className={s.kicker}>Dagens ord</span>
           <span className={`display ${s.featureTitle}`}>Ordet</span>
           <span className={s.featureBlurb}>Sex ord, tre till åtta bokstäver. Sex försök per ord.</span>
-          <OrdetProgress />
+          <CardStatus slug="ordet" />
         </span>
         <span className={s.featureArrow} aria-hidden="true">
           →
@@ -64,12 +63,14 @@ export default function Home() {
           <span className={s.kicker}>Dagens stavning</span>
           <span className={`display ${s.featureTitle}`}>Rättstavat</span>
           <span className={s.featureBlurb}>Hör ordet. Stava det rätt. Fem ord, allt klurigare.</span>
-          <RattstavatProgress />
+          <CardStatus slug="rattstavat" />
         </span>
         <span className={s.featureArrow} aria-hidden="true">
           →
         </span>
       </Link>
+
+      <WeekCard />
 
       <section aria-label="Kommande spel">
         <h2 className={s.sectionTitle}>På gång</h2>
@@ -84,5 +85,6 @@ export default function Home() {
         </ul>
       </section>
     </main>
+    </TodayProvider>
   );
 }

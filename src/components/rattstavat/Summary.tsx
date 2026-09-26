@@ -1,7 +1,7 @@
 "use client";
-import Link from "next/link";
 import { ROUNDS } from "@/game-engine/rattstavat";
 import type { GameState } from "@/game-engine/rattstavat-api-types";
+import { NextGameButton } from "@/components/hub/NextGame";
 import { Countdown } from "@/components/ui/Countdown";
 import u from "@/components/ui/ui.module.css";
 import s from "./rattstavat.module.css";
@@ -46,9 +46,7 @@ export function Summary({ data, onShare, onReview, countdownTarget }: Props) {
         <button type="button" className={u.btnGhost} onClick={onShare}>
           Dela resultat
         </button>
-        <Link href="/ordet" className={`${u.btnPrimary} ${s.linkBtn}`}>
-          Spela Ordet →
-        </Link>
+        <NextGameButton current="rattstavat" />
       </div>
 
       <section className={u.stats} aria-label="Din statistik">

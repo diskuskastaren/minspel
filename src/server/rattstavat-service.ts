@@ -15,6 +15,7 @@ import {
   type SpellingWord,
 } from "@/game-engine/rattstavat";
 import type { AudioKind, GameState, PublicRound } from "@/game-engine/rattstavat-api-types";
+import type { DaySummary } from "@/game-engine/hub";
 import { msUntilNextDay } from "@/lib/time";
 import { IS_DEV, resolveDate as resolveDateFor } from "./dates";
 import { GameError } from "./errors";
@@ -110,4 +111,21 @@ export function audio(deviceId: string, input: { date?: string | null; round: nu
   if (!IS_DEV) throw new GameError("NO_AUDIO", 404);
   const text = input.kind === "ord" ? w.ord : input.kind === "definition" ? w.definition : fillSentence(w.mening, w.ord);
   return { kind: "text", text };
+}
+
+// ---------- Hubben ----------
+
+export function daySummary(deviceId: string, date: string): DaySummary {
+  const s = store.get(deviceId, date, "dag");
+  const done = s?.answers.length ?? 0;
+  const finished = s?.state === "finished";
+  return { done, total: ROUNDS, started: done > 0, finished, detail: finished ? `${score(s!)}/${ROUNDS} rätt` : null };
+}
+
+/** Datum då spelaren stavade klart dagens fem ord. */
+export function finishedDates(deviceId: string): string[] {
+  return store
+    .list(deviceId)
+    .filter((s) => s.state === "finished")
+    .map((s) => s.date);
 }
