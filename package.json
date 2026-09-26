@@ -13,7 +13,10 @@
     "catalog": "node --experimental-strip-types scripts/build-catalog.ts",
     "ordlista": "node --experimental-strip-types scripts/build-ordet-words.ts",
     "ordet:schema": "node --experimental-strip-types scripts/schedule-ordet.ts",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "rattstavat:kolla": "node --experimental-strip-types scripts/check-rattstavat.ts",
+    "rattstavat:schema": "node --experimental-strip-types scripts/schedule-rattstavat.ts",
+    "rattstavat:ljud": "node --experimental-strip-types scripts/generate-rattstavat-audio.ts"
   },
   "dependencies": {
     "next": "^16.3.6",

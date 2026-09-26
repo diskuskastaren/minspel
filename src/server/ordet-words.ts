@@ -1,25 +1,16 @@
 import "server-only";
-import { readFileSync, statSync } from "node:fs";
 import path from "node:path";
 import { LENGTHS, type Schedule, type WordLength } from "@/game-engine/ordet";
 import { addDays, stockholmDate } from "@/lib/time";
+import { loadJsonFile } from "./json-file";
 
 // Ordlistor och fryst schema för Ordet. Filerna byggs med `npm run ordlista`
 // och `npm run ordet:schema` och laddas om automatiskt när de ändras.
 const DIR = () => process.env.KLURIG_ORDET_DIR ?? path.join(process.cwd(), "data", "ordet");
 const WARN_DAYS = 7;
 
-type Cached<T> = { mtimeMs: number; value: T };
-const cache = new Map<string, Cached<unknown>>();
-
 function loadJson<T>(name: string, parse: (json: unknown) => T): T {
-  const file = path.join(DIR(), name);
-  const mtimeMs = statSync(file).mtimeMs;
-  const hit = cache.get(file) as Cached<T> | undefined;
-  if (hit && hit.mtimeMs === mtimeMs) return hit.value;
-  const value = parse(JSON.parse(readFileSync(file, "utf8")));
-  cache.set(file, { mtimeMs, value });
-  return value;
+  return loadJsonFile(path.join(DIR(), name), parse);
 }
 
 export function guessList(length: WordLength): Set<string> {

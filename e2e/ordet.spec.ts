@@ -2,6 +2,7 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 import { expect, test, type Page } from "@playwright/test";
 import { stockholmDate } from "../src/lib/time";
+import { openGame, typeKeys } from "./helpers";
 
 // Läser dagens svar direkt ur det frysta schemat (bara möjligt lokalt – svaret
 // lämnas aldrig ut av API:t före avslut).
@@ -15,24 +16,8 @@ const wrongWords = (len: number, n: number) => {
   return guesses[len].filter((w) => ![...w].some((ch) => a.has(ch))).slice(0, n);
 };
 
-/**
- * Skriver med fysiska tangenttryck. Playwrights `keyboard.type` skickar inga
- * keydown-händelser för tecken utanför amerikansk layout, så Å Ä Ö skickas som
- * de keydown-händelser ett svenskt tangentbord ger.
- */
-async function typeKeys(page: Page, text: string) {
-  for (const ch of text) {
-    if (/^[a-z]$/i.test(ch)) await page.keyboard.press(ch);
-    else await page.evaluate((key) => document.body.dispatchEvent(new KeyboardEvent("keydown", { key, bubbles: true })), ch);
-  }
-}
-
 async function open(page: Page, len: number) {
-  await page.goto(`/ordet?langd=${len}`);
-  const help = page.getByRole("dialog", { name: "Så spelar du" });
-  await expect(help).toBeVisible();
-  await help.getByRole("button", { name: "Nu kör vi" }).click();
-  await expect(help).toBeHidden();
+  await openGame(page, `/ordet?langd=${len}`);
 }
 
 async function guess(page: Page, word: string, via: "keys" | "screen", row: number) {

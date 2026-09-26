@@ -1,7 +1,7 @@
 // Ordet – ren spellogik utan I/O. Körs auktoritativt på servern och i klienten
 // för omedelbar återkoppling (längd, svårt läge, tangentbordsfärger, delning).
 import { addDays, daysBetween } from "../lib/time.ts";
-import { seededShuffle } from "./random.ts";
+import { extendFrozenSchedule, type FrozenSchedule } from "./schedule.ts";
 import { computeStats as computeSharedStats, type Stats } from "./stats.ts";
 
 export const GAME_START_DATE = "2026-09-01";
@@ -137,37 +137,11 @@ export function applyGuess(session: Session, guess: string, answer: string, opts
 
 // ---------- Schema ----------
 
-export type Schedule = Record<string, Record<WordLength, string>>;
+export type Schedule = FrozenSchedule<WordLength>;
 
-/**
- * Förlänger ett fryst schema fram till och med `until`. Befintliga dagar ändras
- * aldrig. Varje längd går igenom sina svar i en fast slumpordning och ett ord
- * återkommer inte förrän alla andra har använts.
- */
+/** Förlänger Ordets frysta schema (se extendFrozenSchedule). */
 export function extendSchedule(schedule: Schedule, answers: Record<WordLength, string[]>, until: string): Schedule {
-  const next: Schedule = { ...schedule };
-  const dates = Object.keys(schedule).sort();
-  let date = dates.length ? addDays(dates[dates.length - 1], 1) : GAME_START_DATE;
-  const used = new Map<WordLength, Set<string>>(LENGTHS.map((l) => [l, new Set(dates.map((d) => schedule[d][l]))]));
-  const order = new Map<WordLength, string[]>(LENGTHS.map((l) => [l, seededShuffle([...answers[l]].sort(), `ordet:${l}:v1`)]));
-  while (date <= until) {
-    const day = {} as Record<WordLength, string>;
-    for (const l of LENGTHS) {
-      const pool = order.get(l)!;
-      if (pool.length === 0) throw new Error(`Inga svar med ${l} bokstäver`);
-      let pick = pool.find((w) => !used.get(l)!.has(w));
-      if (!pick) {
-        // Alla ord har använts – börja om.
-        used.set(l, new Set());
-        pick = pool[0];
-      }
-      used.get(l)!.add(pick);
-      day[l] = pick;
-    }
-    next[date] = day;
-    date = addDays(date, 1);
-  }
-  return next;
+  return extendFrozenSchedule(schedule, answers, LENGTHS, { until, startDate: GAME_START_DATE, seed: "ordet" });
 }
 
 // ---------- Delning ----------

@@ -1,12 +1,12 @@
 import Link from "next/link";
 import { OronmaskProgress } from "@/components/home/OronmaskProgress";
 import { OrdetProgress } from "@/components/home/OrdetProgress";
+import { RattstavatProgress } from "@/components/home/RattstavatProgress";
 import s from "./home.module.css";
 
 const UPCOMING = [
   { name: "Aning", blurb: "Hitta ordet genom betydelse. Varmt eller kallt?", tag: "Kommer snart" },
   { name: "Mer eller mindre", blurb: "Vad är störst? Sverige i siffror.", tag: "Kommer snart" },
-  { name: "Rättstavat", blurb: "Hör ordet. Stava det rätt.", tag: "Kommer snart" },
   { name: "Vilse", blurb: "Var i Sverige är du?", tag: "Senare" },
   { name: "Skalningsspel", blurb: "En ny idé är på gång.", tag: "Idé" },
 ];
@@ -50,6 +50,21 @@ export default function Home() {
           <span className={`display ${s.featureTitle}`}>Ordet</span>
           <span className={s.featureBlurb}>Sex ord, tre till åtta bokstäver. Sex försök per ord.</span>
           <OrdetProgress />
+        </span>
+        <span className={s.featureArrow} aria-hidden="true">
+          →
+        </span>
+      </Link>
+
+      <Link href="/rattstavat" className={`${s.feature} ${s.featureAlt} ${s.featureSpell}`}>
+        <span className={s.featureBee} aria-hidden="true">
+          <span>Aa</span>
+        </span>
+        <span className={s.featureBody}>
+          <span className={s.kicker}>Dagens stavning</span>
+          <span className={`display ${s.featureTitle}`}>Rättstavat</span>
+          <span className={s.featureBlurb}>Hör ordet. Stava det rätt. Fem ord, allt klurigare.</span>
+          <RattstavatProgress />
         </span>
         <span className={s.featureArrow} aria-hidden="true">
           →

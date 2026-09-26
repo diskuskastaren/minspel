@@ -216,3 +216,37 @@
 .featureAlt:hover .featureTiles span:nth-child(3) {
   transition-delay: 0.16s;
 }
+
+/* Rättstavat: linjerat papper med en "Aa" */
+.featureSpell {
+  background:
+    linear-gradient(90deg, transparent 18px, color-mix(in srgb, var(--lingon) 35%, transparent) 18px 19.5px, transparent 19.5px),
+    repeating-linear-gradient(180deg, var(--card) 0 23px, var(--line) 23px 24px);
+}
+.featureSpell .kicker {
+  color: var(--lingon);
+}
+.featureBee {
+  display: grid;
+  place-items: center;
+  width: 84px;
+  height: 84px;
+}
+.featureBee span {
+  display: grid;
+  place-items: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: var(--saffron);
+  color: var(--ink);
+  font-family: var(--font-display), Georgia, serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size: 1.9rem;
+  box-shadow: 0 0 0 4px var(--card), 0 0 0 6px var(--ink);
+  transition: transform 0.4s var(--ease-out);
+}
+.featureSpell:hover .featureBee span {
+  transform: rotate(-10deg) scale(1.05);
+}

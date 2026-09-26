@@ -15,13 +15,14 @@ import {
 import type { GameState, LengthState } from "@/game-engine/ordet-api-types";
 import { normalizeKey } from "@/lib/normalize-word";
 import { stockholmDate } from "@/lib/time";
+import { Keyboard } from "@/components/ui/Keyboard";
 import { Modal } from "@/components/ui/Modal";
+import { ToastRegion, useToast } from "@/components/ui/Toast";
 import { useColorblind, useFlag } from "@/components/ui/preferences";
 import u from "@/components/ui/ui.module.css";
 import { ApiError, api, errorText } from "./api";
 import { Board, describeRow } from "./Board";
 import { HowToPlay } from "./HowToPlay";
-import { Keyboard } from "./Keyboard";
 import { ResultSheet, WIN_LINES } from "./ResultSheet";
 import { Settings } from "./Settings";
 import s from "./ordet.module.css";
@@ -33,8 +34,6 @@ const IS_DEV = process.env.NODE_ENV !== "production";
 /** Rutorna vänds en i taget. */
 const FLIP_STAGGER_MS = 300;
 const FLIP_MS = 500;
-
-type Toast = { id: number; text: string; tone: "info" | "good" | "half" | "bad" };
 
 function formatLongDate(date: string) {
   return new Intl.DateTimeFormat("sv-SE", { weekday: "long", day: "numeric", month: "long", timeZone: "UTC" }).format(
@@ -85,7 +84,7 @@ export function OrdetGame() {
   const [showResult, setShowResult] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
-  const [toast, setToast] = useState<Toast | null>(null);
+  const { toast, notify } = useToast();
   const [announce, setAnnounce] = useState("");
   const [countdownTarget, setCountdownTarget] = useState(0);
   const [hardPref, setHardPref] = useFlag("klurig:ordet:svart");
@@ -98,11 +97,6 @@ export function OrdetGame() {
   }, []);
   useEffect(() => () => timers.current.forEach(clearTimeout), []);
 
-  const notify = useCallback((text: string, tone: Toast["tone"] = "info", ms = 2400) => {
-    const id = Date.now() + Math.random();
-    setToast({ id, text, tone });
-    setTimeout(() => setToast((t) => (t?.id === id ? null : t)), ms);
-  }, []);
 
   const applyState = useCallback(
     (st: GameState) => {
@@ -267,6 +261,9 @@ export function OrdetGame() {
       if ((e.key === "Enter" || e.key === " ") && el.closest("button, a") && !onGameKey) return;
       if (e.key === "Enter" || e.key === "Backspace" || normalizeKey(e.key)) {
         e.preventDefault();
+        // Skriver man medan en annan knapp har fokus flyttas fokus till spelet,
+        // så att Enter sedan skickar svaret i stället för att trycka på knappen.
+        if (!onGameKey && e.key !== "Enter" && el.closest("button, a")) boardRef.current?.focus({ preventScroll: true });
         onKey(e.key);
       }
     };
@@ -477,13 +474,7 @@ export function OrdetGame() {
       <p className="visually-hidden" aria-live="polite">
         {announce}
       </p>
-      <div className={u.toastRegion} aria-live="assertive">
-        {toast && (
-          <div key={toast.id} className={`${u.toast} ${u[`toast_${toast.tone}`]}`}>
-            {toast.text}
-          </div>
-        )}
-      </div>
+      <ToastRegion toast={toast} />
     </main>
   );
 }

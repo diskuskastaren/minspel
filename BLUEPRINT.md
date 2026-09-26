@@ -16,7 +16,7 @@
 2. **Spelfunktionerna först.** Konton/inloggning, synk, Plus/betalning, arkiv-betalvägg, annonser, profiler och egna utmaningar väntar tills spelen fungerar. Anonyma lokala sessioner räcker under utvecklingen.
 3. **Ordning:**
    1. **Öronmask (musikspelet)** – byggs först.
-   2. **Ordet** – byggt (fas 1a). Övriga spel (Aning, Mer eller mindre, Rättstavat) – väntar.
+   2. **Ordet** – byggt (fas 1a). **Rättstavat** – byggt (fas 1b). Aning och Mer eller mindre – väntar.
    3. **Vilse** (Street View) – parkerad för senare implementering.
    4. **Skalningsspel** – ny idé som produktägaren utvecklar själv. *Endast notering tills vidare, ingen specifikation.*
 4. **Musikkälla (verifierat 2026-09-23):**
@@ -30,6 +30,11 @@
    - Schema (1.3) och dagsstatistik (1.6) ligger i filer och räknas vid anrop, inte i Postgres/cron.
    - Klientcachen (1.7) använder localStorage i stället för IndexedDB.
    - Hårdkodade svenska strängar i komponenterna (ingen `messages/sv.json` ännu).
+7. **Status 2026-09-26:** Rättstavat (fas 1b, §16 uppgift 2.7–2.8) är byggt och spelbart lokalt. Avvikelser:
+   - 300 ord (60 per nivå) med AI-skrivna texter, ännu **inte granskade** av människa. Ingen granskningskö i admin – `granskad`-fältet i `data/rattstavat/ord.json` och `npm run rattstavat:kolla` ersätter den tills vidare.
+   - Uppläsning: skriptet för Azure TTS finns men är otestat (ingen nyckel). Utan ljudfiler används webbläsarens talsyntes, bara i utvecklingsläge. Ljudfilerna ligger lokalt i `data/rattstavat/ljud/`, inte på R2/CDN.
+   - Definitionerna läses upp utan lucka (de nämner aldrig ordet) i stället för "En ___ är …".
+   - Ursprung visas som språk före svaret och med källordet efter svaret (källordet avslöjar annars stavningen).
 
 ---
 
